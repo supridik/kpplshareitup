@@ -10,6 +10,11 @@ public function index(){
 		);	
 	}
 
+public function pinjam_barang(){
+
+	
+}
+
 }
 
 ?>

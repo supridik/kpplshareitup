@@ -10,6 +10,16 @@ public function index(){
 		);	
 	}
 
+public function search(){
+
+
+}
+
+public function search_by_loc(){
+
+	
+}
+
 }
 
 ?>

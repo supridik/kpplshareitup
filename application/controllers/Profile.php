@@ -10,6 +10,12 @@ public function index(){
 		);	
 	}
 
+public function edit_profil(){
+
+
+}
+
+
 }
 
 ?>

@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Bootstrap E-commerce Templates</title>
+		<title>Share-It-Up</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
@@ -16,6 +16,13 @@
 		<link href=<?php echo base_url()."assets/themes/css/flexslider.css"?> rel="stylesheet">
 		<link href=<?php echo base_url()."assets/themes/css/main.css" ?> rel="stylesheet">
 
+		<!--Catatan popup-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic'>
+		<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+
+    	<link rel="stylesheet" href="assets/css/style.css">
+
 		<!-- scripts -->
 		<script src=<?php echo base_url()."assets/themes/js/jquery-1.7.2.min.js"?>></script>
 		<script src=<?php echo base_url()."assets/bootstrap/js/bootstrap.min.js"?>></script>				
@@ -25,8 +32,13 @@
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 			<script src="js/respond.min.js"></script>
 		<![endif]-->
+
 	</head>
-    <body>		
+    <body>
+
+
+    <form action="<?php echo base_url()."Front/aksi_Login"; ?>" method="POST" class="form login">
+    <div class="container" style="margin-left:80px; margin-bottom:-10px;" >
 		<div id="top-bar" class="container">
 			<div class="row">
 				<div class="span4">
@@ -35,21 +47,35 @@
 					</form>
 				</div>
 				<div class="span8">
-					<div class="account pull-right">
-						<ul class="user-menu">				
-							<li><a href="#">My Account</a></li>
-							<li><a href="cart.html">Your Cart</a></li>
-							<li><a href="checkout.html">Checkout</a></li>					
-							<li><a href=<?php echo base_url()."Register"?>>Login</a></li>		
-						</ul>
-					</div>
+						<div class="account pull-left" style="margin-left:250px;">
+							<label for="username" >Username</label>
+							<input class="inputtext" name="username" type="text" tabindex="1" id="username">
+						</div>
+						<div class="account pull-left" style="margin-left:10px;">
+							<label for="password">Password</label>
+							<input class="inputtext" name="password" type="password" tabindex="2" id="password">
+						</div>
+							<ul class="user-menu">
+								<div class="account pull-right" style="margin-top:-41px;">
+									<div class="actions" style="margin-left:20px;"><input name="submit" style="background-color: #FFA500; padding: 5px 10px;" tabindex="3" class="btn btn-inverse large" type="submit" value="Login"></div>
+								</div>
+							</ul>
+						<div class="account pull-left" style="margin-left:250px;">
+							<p>Tidak punya akun? <a href="<?php echo base_url()."register"?>" tabindex="4">Daftar sekarang</a></p>
+						</div>
+						<div class="account pull-right" style="margin-right:197px;">
+							<a class="reset" style="margin-top:0px;" href="<?php echo base_url()."lupapass"?>" tabindex="5">Lupa Password?</a>
+						</div>
 				</div>
 			</div>
 		</div>
+
+
+
 		<div id="wrapper" class="container">
 			<section class="navbar main-menu">
-				<div class="navbar-inner main-menu">				
-					<a href="index.html" class="logo pull-left"><img src="themes/images/logo.png" class="site_logo" alt=""></a>
+				<div class="navbar-inner main-menu">		
+					<a href="index.html" class="logo pull-left"><img src="assets/img/logo2.png" class="site_logo" alt="" style="margin-left:-10px;"></a>
 					<nav id="menu" class="pull-right">
 						<ul>
 							<li><a href="./products.html">Woman</a>					
@@ -383,5 +409,10 @@
 				});
 			});
 		</script>
+
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='https://andwecode.com/wp-content/uploads/2015/10/jquery.leanModal.min_.js'></script>
+
+    <script  src="assets/js/index.js"></script>
     </body>
 </html>

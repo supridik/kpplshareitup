@@ -25,6 +25,11 @@
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 			<script src="js/respond.min.js"></script>
 		<![endif]-->
+
+		<?php
+    		include_once 'db_Config.php';
+    	?>
+
 	</head>
     <body>		
 		<div id="top-bar" class="container">
@@ -37,19 +42,18 @@
 				<div class="span8">
 					<div class="account pull-right">
 						<ul class="user-menu">				
-							<li><a href="#">My Account</a></li>
-							<li><a href="cart.html">Your Cart</a></li>
-							<li><a href="checkout.html">Checkout</a></li>					
-							<li><a href="register.html">Login</a></li>		
+							<li><a href=<?php echo base_url()."login"?>>Login</a></li>	
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
+
+
 		<div id="wrapper" class="container">
 			<section class="navbar main-menu">
 				<div class="navbar-inner main-menu">				
-					<a href="index.html" class="logo pull-left"><img src="themes/images//logo.png" class="site_logo" alt=""></a>
+					<a href=<?php echo base_url().""?> class="logo pull-left"><img src="assets/img/logo2.png" class="site_logo" alt="" style="margin-left:-10px;"></a>
 					<nav id="menu" class="pull-right">
 						<ul>
 							<li><a href="./products.html">Woman</a>					
@@ -76,62 +80,69 @@
 			</section>			
 			<section class="header_text sub">
 			<img class="pageBanner" src="themes/images/pageBanner.png" alt="New products" >
-				<h4><span>Login or Regsiter</span></h4>
+				<h4><span>Login or Register</span></h4>
 			</section>			
-			<section class="main-content">				
+
+			<section class="main-content">	
+				<form action="<?php echo base_url()."Front/aksi_login";?>" method="POST" class="form login">
 				<div class="row">
-					<div class="span5">					
-						<h4 class="title"><span class="text"><strong>Login</strong> Form</span></h4>
+					<div class="span5">				
+						<h4 class="title" style="margin-left:0px;"><span class="text"><strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLogin</strong> Form</span></h4>
 						<form action="#" method="post">
 							<input type="hidden" name="next" value="/">
 							<fieldset>
 								<div class="control-group">
-									<label class="control-label">Username</label>
+									<label for="username" class="control-label" style="margin-left:27px;">Username</label>
 									<div class="controls">
-										<input type="text" placeholder="Enter your username" id="username" class="input-xlarge">
+										<input name="username" style="margin-left:27px;" type="text" placeholder="Enter your username" id="username" class="input-xlarge" required>
 									</div>
 								</div>
 								<div class="control-group">
-									<label class="control-label">Username</label>
+									<label for="password" class="control-label" style="margin-left:27px;">Password</label>
 									<div class="controls">
-										<input type="password" placeholder="Enter your password" id="password" class="input-xlarge">
+										<input name="password" style="margin-left:27px;" type="password" placeholder="Enter your password" id="password" class="input-xlarge" required>
 									</div>
 								</div>
 								<div class="control-group">
-									<input tabindex="3" class="btn btn-inverse large" type="submit" value="Sign into your account">
+									<input tabindex="3" class="btn btn-inverse large" style="margin-left:27px;" type="submit" value="Sign into your account">
 									<hr>
-									<p class="reset">Recover your <a tabindex="4" href="#" title="Recover your username or password">username or password</a></p>
+									<p class="reset" style="margin-left:27px;">Recover your <a tabindex="4" href="#" title="Recover your username or password">username or password</a></p>
 								</div>
 							</fieldset>
 						</form>				
 					</div>
+
 					<div class="span7">					
-						<h4 class="title"><span class="text"><strong>Register</strong> Form</span></h4>
+						<h4 class="title" style="margin-left:0px;"><span class="text"><strong>&nbsp&nbsp&nbsp&nbsp&nbspRegister</strong> Form</span></h4>
 						<form action="#" method="post" class="form-stacked">
 							<fieldset>
+
 								<div class="control-group">
-									<label class="control-label">Username</label>
+									<label for="name2" class="control-label" style="margin-left:20px;">Nama Lengkap</label>
 									<div class="controls">
-										<input type="text" placeholder="Enter your username" class="input-xlarge">
+										<input name="user" style="margin-left:20px;" id="name2" type="text" placeholder="Enter your name" class="input-xlarge" required>
 									</div>
 								</div>
+
 								<div class="control-group">
-									<label class="control-label">Email address:</label>
+									<label for="username2" class="control-label" style="margin-left:20px;">Username</label>
 									<div class="controls">
-										<input type="password" placeholder="Enter your email" class="input-xlarge">
+										<input name="username" style="margin-left:20px;" id="username2" type="text" placeholder="Enter your username" class="input-xlarge" required>
 									</div>
 								</div>
+								
 								<div class="control-group">
-									<label class="control-label">Password:</label>
+									<label for="password2" class="control-label" style="margin-left:20px;">Password:</label>
 									<div class="controls">
-										<input type="password" placeholder="Enter your password" class="input-xlarge">
+										<input name="password" style="margin-left:20px;" id="password2" type="password" placeholder="Enter your password" class="input-xlarge" required>
 									</div>
-								</div>							                            
-								<div class="control-group">
+								</div>
+
+								<div class="control-group" style="margin-left:20px;">
 									<p>Now that we know who you are. I'm not a mistake! In a comic, you know how you can tell who the arch-villain's going to be?</p>
 								</div>
 								<hr>
-								<div class="actions"><input tabindex="9" class="btn btn-inverse large" type="submit" value="Create your account"></div>
+								<div class="actions" style="margin-left:20px;"><input name="submit" tabindex="9" class="btn btn-inverse large" type="submit" value="Create your account"></div>
 							</fieldset>
 						</form>					
 					</div>				

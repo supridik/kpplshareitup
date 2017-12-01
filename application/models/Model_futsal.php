@@ -1,10 +1,22 @@
 <?php
 
 class Model_futsal extends CI_Model {
-	function cek_login($username, $password) {
-	    $this->db->where('username',$username);
-		$this->db->where('password', $password);
-		return $this->db->get('user');
+
+	function cek_login($username, $sha1) {
+		$this->db->select('*');
+    	$this->db->from('user');
+    	$this->db->where('username', $username);
+    	$this->db->where('password', $sha1);
+    
+
+    	$query = $this->db->get();
+
+	    if ($query->num_rows() == 1) {
+     		return true;
+    	}
+    	else{
+     		return false;
+    	}
 	}
 /*function tampil_lapangan(){
 		$query = $this->db->get('lapangan');

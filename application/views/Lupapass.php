@@ -39,7 +39,8 @@
         </div>
         <div class="span8">
           <div class="account pull-right">
-            <ul class="user-menu">        
+            <ul class="user-menu">
+              <li><a href=<?php echo base_url().""?>>Login</a></li>       
               <li><a href=<?php echo base_url()."register"?>>Register</a></li>  
             </ul>
           </div>

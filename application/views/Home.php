@@ -51,7 +51,7 @@
 							<li><a href="#">My Account</a></li>
 							<li><a href="cart.html">Your Cart</a></li>
 							<li><a href="checkout.html">Checkout</a></li>					
-							<li><a href=<?php echo base_url().""?>>Logout</a></li>		
+							<li><a href="<?php echo site_url('Home/logout'); ?>">Logout</a></li>		
 						</ul>
 					</div>
 				</div>

@@ -2,22 +2,19 @@
 
 class Model_futsal extends CI_Model {
 
-	function cek_login($username, $sha1) {
-		$this->db->select('*');
-    	$this->db->from('user');
-    	$this->db->where('username', $username);
-    	$this->db->where('password', $sha1);
+	function login($username,$password) {
+        $this->db->where('username', $username);
+        $this->db->where('password', $password);
+        $query =  $this->db->get('user');
+        return $query->num_rows();
+    }
     
-
-    	$query = $this->db->get();
-
-	    if ($query->num_rows() == 1) {
-     		return true;
-    	}
-    	else{
-     		return false;
-    	}
-	}
+//    untuk mengambil data hasil login
+    function data_login($username,$password) {
+        $this->db->where('username', $username);
+        $this->db->where('password', $password);
+        return $this->db->get('user')->row();
+    }
 /*function tampil_lapangan(){
 		$query = $this->db->get('lapangan');
 		return $query->result_array();
@@ -31,7 +28,7 @@ class Model_futsal extends CI_Model {
 	function tampil_profil($id){
 		//$this->db->where('id_user',$id);
 
-		$data = $this->db->query('select * from user where id_user='.$id);
+		$data = $this->db->query('select * from user where username='.$id);
 		return $data->result_array();
 
 	}

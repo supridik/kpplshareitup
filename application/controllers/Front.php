@@ -17,7 +17,7 @@ class Front extends CI_Controller{
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
 		$sha1 = sha1($password);
-		$cek = $this->Model_futsal->cek_login($username,$sha1);
+		$cek = $this->Model_futsal->login($username,$sha1);
 		$where = array(
 			'username' =>$username,
 			'password' =>$sha1
@@ -96,15 +96,6 @@ class Front extends CI_Controller{
 			//redirect('home');
             $this->load->view('Home');
   	}
-	public function search(){
-
-
-	}
-
-	public function search_by_loc(){
-
-	
-	}
 }
 
 ?>

@@ -11,6 +11,8 @@
 		<link href=<?php echo base_url()."assets/bootstrap/css/bootstrap-responsive.min.css"?> rel="stylesheet">		
 		<link href=<?php echo base_url()."assets/themes/css/bootstrappage.css"?> rel="stylesheet"/>
 		
+		<!-- logo icon -->
+		<link rel="icon" href="<?php echo base_url(); ?>assets/img/icon.png" type="image/png">
 		
 		<!-- global styles -->
 		<link href=<?php echo base_url()."assets/themes/css/flexslider.css"?> rel="stylesheet">

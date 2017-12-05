@@ -80,7 +80,7 @@
 				</div>
 			</section>			
 			<section class="header_text sub">
-			<img class="pageBanner" src="themes/images/pageBanner.png" alt="Share-It-Up" >
+			<img class="pageBanner" src="<?php echo base_url("themes/images/pageBanner.png")?>" alt="Share-It-Up" >
 				<h4><span>Because Sharing is Caring</span></h4>
 			</section>			
 

@@ -1,3 +1,13 @@
+<?php
+	$user_id=$this->session->userdata('username');
+ 
+	if(!$user_id){
+ 
+  		redirect('login');
+	}
+ 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -37,7 +47,7 @@
     <body>
 
 
-    <form action="<?php echo base_url()."Front/aksi_login"; ?>" method="POST" class="form login">
+    <form action="<?php echo base_url()."Login/aksi_login"; ?>" method="POST" class="form login">
 		<div id="top-bar" class="container">
 			<div class="row">
 				<div class="span4">
@@ -47,7 +57,8 @@
 				</div>
 				<div class="span8">
 					<div class="account pull-right">
-						<ul class="user-menu">				
+						<ul class="user-menu">
+							<b>Hy, <?php echo $this->session->userdata('nama_user'); ?></b>			
 							<li><a href="#">My Account</a></li>
 							<li><a href="cart.html">Your Cart</a></li>
 							<li><a href="checkout.html">Checkout</a></li>					

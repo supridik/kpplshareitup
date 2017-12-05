@@ -3,18 +3,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  
 class Home extends CI_Controller{
 
-function __construct(){
+	function __construct(){
 		parent::__construct();		
-		 if(!$this->session->userdata('username'))
-			redirect('');
+		
 		
 		$this->load->model('Model_futsal');
 	}
 
 
-public function index(){
-
-		// $data = $this->Model_futsal->tampil_lapangan();
+	public function index(){
+		//$data['results'] = $this->Model_futsal->login_user($username,$pass);
+        //$this->load->helper(array('form','url'));
 		$this->load->view('Home');	
 	}
 

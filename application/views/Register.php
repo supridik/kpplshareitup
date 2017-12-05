@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Share-it-up! : Register</title>
+		<title>Share-it-up! : Login / Register Page</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
@@ -42,7 +42,7 @@
 				<div class="span8">
 					<div class="account pull-right">
 						<ul class="user-menu">				
-							<li><a href=<?php echo base_url().""?>>Login</a></li>
+							<li><a href=<?php echo base_url()."login"?>>Login</a></li>
 							<li><a href=<?php echo base_url()."register"?>>Register</a></li>	
 						</ul>
 					</div>
@@ -80,7 +80,7 @@
 				</div>
 			</section>			
 			<section class="header_text sub">
-			<img class="pageBanner" src="themes/images/pageBanner.png" alt="New products" >
+			<img class="pageBanner" src="themes/images/pageBanner.png" alt="Share-It-Up" >
 				<h4><span>Login or Register</span></h4>
 			</section>			
 

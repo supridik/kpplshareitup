@@ -10,10 +10,18 @@ class Model_futsal extends CI_Model {
     }
     
 //    untuk mengambil data hasil login
-    function data_login($username,$password) {
-        $this->db->where('username', $username);
-        $this->db->where('password', $password);
-        return $this->db->get('user')->row();
+    public function login_user($username,$pass) {
+        $this->db->select('*');
+  		$this->db->from('user');
+  		$this->db->where('username',$username);
+  		$this->db->where('password',$pass);
+ 
+		if($query=$this->db->get()) {
+			return $query->row_array();
+		}
+		else{
+    		return false;
+  		}
     }
 /*function tampil_lapangan(){
 		$query = $this->db->get('lapangan');

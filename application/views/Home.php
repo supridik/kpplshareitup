@@ -3,7 +3,7 @@
  
 	if(!$user_id){
  
-  		redirect('Login');
+  		redirect('login');
 	}
  
 ?>
@@ -23,7 +23,7 @@
 		
 		<!-- logo icon -->
 		<link rel="icon" href="<?php echo base_url(); ?>assets/img/icon.png" type="image/png">
-		
+
 		<!-- global styles -->
 		<link href=<?php echo base_url()."assets/themes/css/flexslider.css"?> rel="stylesheet">
 		<link href=<?php echo base_url()."assets/themes/css/main.css" ?> rel="stylesheet">
@@ -63,7 +63,7 @@
 							<li><b>Hi, <?php echo $this->session->userdata('nama_user'); ?></b>		</li>	
 							
 								
-							<li><a href="<?php echo site_url('Logout'); ?>">Logout</a></li>		
+							<li><a style="padding: 3px 5px;" class="btn btn-inverse large" href="<?php echo site_url('Logout'); ?>">Logout</a></li>		
 						</ul>
 					</div>
 				</div>
@@ -77,7 +77,7 @@
 					<a href=<?php echo base_url().""?> class="logo pull-left"><img src="assets/img/logo.png" class="site_logo" alt="" style="margin-left:-10px; width:11%;height:11%;"></a>
 					<nav id="menu" class="pull-right">
 						<ul>
-							<li><a href="<?php echo base_url("Home")?>">Home</a>					
+							<li><a href="<?php echo base_url("home")?>">Home</a>					
 								<!-- <ul>
 									<li><a href="./products.html">Lacinia nibh</a></li>									
 									<li><a href="./products.html">Eget molestie</a></li>
@@ -103,16 +103,16 @@
 				<div class="flexslider">
 					<ul class="slides">
 						<li>
-							<img src="themes/images/carousel/banner-1.jpg" alt="" />
+							<img src="<?php echo base_url("themes/images/carousel/banner-1.jpg")?>" alt="" />
 						</li>
-						<li>
+						<!-- <li>
 							<img src="themes/images/carousel/banner-2.jpg" alt="" />
 							<div class="intro">
 								<h1>Mid season sale</h1>
 								<p><span>Up to 50% Off</span></p>
 								<p><span>On selected items online and in stores</span></p>
 							</div>
-						</li>
+						</li> -->
 					</ul>
 				</div>			
 			</section>

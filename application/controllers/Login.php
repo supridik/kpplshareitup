@@ -13,11 +13,11 @@ class Login extends CI_Controller{
 	}
 
 	public function index(){
-		 if($this->session->userdata('id_user')){
-			redirect('Home');}
+		if($this->session->userdata('id_user')){
+			redirect('home');}
 
 
-		$this->load->view('Login');	
+		$this->load->view('login');	
 	}
 
 	public function aksi_login(){
@@ -40,11 +40,11 @@ class Login extends CI_Controller{
         	// $this->session->set_userdata('deskripsi',$data['deskripsi']);
         	$this->session->set_userdata('username',$data['username']);
         	$this->session->set_userdata('isAdmin',$data['isAdmin']);
-	    	redirect('Home');
+	    	redirect('home');
 	    	//$this->load->view('Home');
         }	else{
                 	$message = "Username / Password salah";
-					echo "<script type='text/javascript'>alert('$message');window.location.href='".site_url('')."';</script>";
+					echo "<script type='text/javascript'>alert('$message');window.location.href='".site_url('login')."';</script>";
 	  		//$this->load->view('Home');
 		}
 	}

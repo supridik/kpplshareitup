@@ -15,7 +15,7 @@ class Home extends CI_Controller{
 	public function index(){
 		//$data['results'] = $this->Model_futsal->login_user($username,$pass);
         //$this->load->helper(array('form','url'));
-		$this->load->view('Home');	
+		$this->load->view('home');	
 	}
 
 

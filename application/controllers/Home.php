@@ -3,9 +3,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  
 class Home extends CI_Controller{
 
-	function __construct(){
+	function __construct(){	
 		parent::__construct();		
-		
+		 if(!$this->session->userdata('id_user'))
+			redirect('login');
 		
 		$this->load->model('Model_futsal');
 	}
@@ -17,13 +18,6 @@ class Home extends CI_Controller{
 		$this->load->view('Home');	
 	}
 
-	function logout() {
-//        destroy session
-        $this->session->sess_destroy();
-        
-//        redirect ke halaman login
-        redirect(site_url('Home'));
-    }
 
 
 

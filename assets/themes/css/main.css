@@ -302,11 +302,11 @@ section.navbar{
 	margin-right: 0px;
 }
 #menu > ul > li > a {
-	font-size: 11px;
+/*	font-size: 20px;*/
 	color: #111;
 	display: block;
 	text-transform: uppercase;
-	font-weight: bold;
+/*	font-weight: bold;*/
 	text-align: center;
 	padding: 10px 14px;
 	}

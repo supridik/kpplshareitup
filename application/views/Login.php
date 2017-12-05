@@ -34,16 +34,16 @@
     <body>		
 		<div id="top-bar" class="container">
 			<div class="row">
-				<div class="span4">
+				<!-- <div class="span4">
 					<form method="POST" class="search_form">
 						<input type="text" class="input-block-level search-query" Placeholder="eg. T-sirt">
 					</form>
-				</div>
+				</div> -->
 				<div class="span8">
 					<div class="account pull-right">
 						<ul class="user-menu">				
-							<li><a href=<?php echo base_url()."login"?>>Login</a></li>
-							<li><a href=<?php echo base_url()."register"?>>Register</a></li>	
+							<!-- <li><a href=<?php echo base_url()."login"?>>Login</a></li>
+							<li><a href=<?php echo base_url()."register"?>>Register</a> --></li>	
 						</ul>
 					</div>
 				</div>
@@ -56,7 +56,7 @@
 				<div class="navbar-inner main-menu">				
 					<a href=<?php echo base_url().""?> class="logo pull-left"><img src="assets/img/logo2.png" class="site_logo" alt="" style="margin-left:-10px;"></a>
 					<nav id="menu" class="pull-right">
-						<ul>
+				<!-- 		<ul>
 							<li><a href="./products.html">Woman</a>					
 								<ul>
 									<li><a href="./products.html">Lacinia nibh</a></li>									
@@ -75,7 +75,7 @@
 							<li><a href="./products.html">Hangbag</a></li>
 							<li><a href="./products.html">Best Seller</a></li>
 							<li><a href="./products.html">Top Seller</a></li>
-						</ul>
+						</ul> -->
 					</nav>
 				</div>
 			</section>			

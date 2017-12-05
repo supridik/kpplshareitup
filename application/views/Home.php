@@ -3,7 +3,7 @@
  
 	if(!$user_id){
  
-  		redirect('login');
+  		redirect('Login');
 	}
  
 ?>
@@ -31,7 +31,7 @@
 		<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic'>
 		<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
 
-    	<link rel="stylesheet" href="assets/css/style.css">
+    	<!-- <link rel="stylesheet" href="assets/css/style.css"> -->
 
 		<!-- scripts -->
 		<script src=<?php echo base_url()."assets/themes/js/jquery-1.7.2.min.js"?>></script>
@@ -58,11 +58,10 @@
 				<div class="span8">
 					<div class="account pull-right">
 						<ul class="user-menu">
-							<b>Hy, <?php echo $this->session->userdata('nama_user'); ?></b>			
-							<li><a href="#">My Account</a></li>
-							<li><a href="cart.html">Your Cart</a></li>
-							<li><a href="checkout.html">Checkout</a></li>					
-							<li><a href="<?php echo site_url('Home/logout'); ?>">Logout</a></li>		
+							<li><b>Hi, <?php echo $this->session->userdata('nama_user'); ?></b>		</li>	
+							
+								
+							<li><a href="<?php echo site_url('Logout'); ?>">Logout</a></li>		
 						</ul>
 					</div>
 				</div>
@@ -73,27 +72,27 @@
 		<div id="wrapper" class="container">
 			<section class="navbar main-menu">
 				<div class="navbar-inner main-menu">				
-					<a href=<?php echo base_url()."home"?> class="logo pull-left"><img src="assets/img/logo2.png" class="site_logo" alt="" style="margin-left:-10px;"></a>
+					<a href=<?php echo base_url()."Home"?> class="logo pull-left"><img src="assets/img/logo2.png" class="site_logo" alt="" style="margin-left:-10px;"></a>
 					<nav id="menu" class="pull-right">
 						<ul>
-							<li><a href="./products.html">Woman</a>					
-								<ul>
+							<li><a href="<?php echo base_url("Home")?>">Home</a>					
+								<!-- <ul>
 									<li><a href="./products.html">Lacinia nibh</a></li>									
 									<li><a href="./products.html">Eget molestie</a></li>
 									<li><a href="./products.html">Varius purus</a></li>									
-								</ul>
+								</ul> -->
 							</li>															
-							<li><a href="./products.html">Man</a></li>			
-							<li><a href="./products.html">Sport</a>
-								<ul>									
+							<li><a href="">Profil</a></li>			
+							<li><a href="">Barang</a>
+								<!-- <ul>									
 									<li><a href="./products.html">Gifts and Tech</a></li>
 									<li><a href="./products.html">Ties and Hats</a></li>
 									<li><a href="./products.html">Cold Weather</a></li>
-								</ul>
+								</ul> -->
 							</li>							
-							<li><a href="./products.html">Hangbag</a></li>
+							<!-- <li><a href="./products.html"></a></li>
 							<li><a href="./products.html">Best Seller</a></li>
-							<li><a href="./products.html">Top Seller</a></li>
+							<li><a href="./products.html">Top Seller</a></li> -->
 						</ul>
 					</nav>
 				</div>

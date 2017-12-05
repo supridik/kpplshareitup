@@ -54,7 +54,7 @@
 		<div id="wrapper" class="container">
 			<section class="navbar main-menu">
 				<div class="navbar-inner main-menu">				
-					<a href=<?php echo base_url().""?> class="logo pull-left"><img src="assets/img/logo2.png" class="site_logo" alt="" style="margin-left:-10px;"></a>
+					<a href=<?php echo base_url().""?> class="logo pull-left"><img src="assets/img/logo.png" class="site_logo" alt="" style="margin-left:-10px; width:11%;height:11%;"></a>
 					<nav id="menu" class="pull-right">
 				<!-- 		<ul>
 							<li><a href="./products.html">Woman</a>					
@@ -81,14 +81,14 @@
 			</section>			
 			<section class="header_text sub">
 			<img class="pageBanner" src="themes/images/pageBanner.png" alt="Share-It-Up" >
-				<h4><span>Login or Register</span></h4>
+				<h4><span>Because Sharing is Caring</span></h4>
 			</section>			
 
 			<section class="main-content">
 				<form role="form" method="post" action="<?php echo base_url('Login/aksi_login'); ?>">
 				<div class="row">
 					<div class="span5">				
-						<h4 class="title" style="margin-left:0px;"><span class="text"><strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLogin</strong> Form</span></h4>
+						<h4 class="title" style="margin-left:0px;"><span class="text"><strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLogin</strong> </span></h4>
 						<form action="#" method="post">
 							<input type="hidden" name="next" value="/">
 							<fieldset>
@@ -114,7 +114,7 @@
 					</div>
 
 					<div class="span7">					
-						<h4 class="title" style="margin-left:0px;"><span class="text"><strong>&nbsp&nbsp&nbsp&nbsp&nbspRegister</strong> Form</span></h4>
+						<h4 class="title" style="margin-left:0px;"><span class="text">&nbsp&nbsp&nbsp&nbsp&nbspDon't have account?<strong>&nbspRegister</strong></span></h4>
 						<form action="" method="post" class="form-stacked">
 							<fieldset>
 

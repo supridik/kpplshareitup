@@ -163,7 +163,7 @@
 				<span>Copyright 2013 bootstrappage template  All right reserved.</span>
 			</section>
 		</div>
-		<script src="themes/js/common.js"></script>
+		<script src="assets/themes/js/common.js"></script>
 		<script>
 			$(document).ready(function() {
 				$('#checkout').click(function (e) {

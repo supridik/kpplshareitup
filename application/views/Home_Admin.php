@@ -40,7 +40,7 @@
 		<script src=<?php echo base_url()."assets/themes/js/jquery-1.7.2.min.js";?>></script>
 		<script src=<?php echo base_url()."assets/bootstrap/js/bootstrap.min.js";?>></script>				
 		<script src=<?php echo base_url()."assets/themes/js/superfish.js";?>></script>	
-		<script src=<?php echo base_url()."assets/themes/js/jquery.scrolltotop.js";?>></script>
+		<script src=<?php echo base_url()."assets/themes/js/jquery.scrolltotopLogin.js";?>></script>
 		<!--[if lt IE 9]>			
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 			<script src="js/respond.min.js"></script>
@@ -151,8 +151,8 @@
 
 
 
-		<script src="themes/js/common.js"></script>
-		<script src="themes/js/jquery.flexslider-min.js"></script>
+		<script src="assets/themes/js/common.js"></script>
+		<script src="assets/themes/js/jquery.flexslider-min.js"></script>
 		<script type="text/javascript">
 			$(function() {
 				$(document).ready(function() {

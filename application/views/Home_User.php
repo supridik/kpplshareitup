@@ -25,7 +25,6 @@
 		<link rel="icon" href="<?php echo base_url(); ?>assets/img/icon.png" type="image/png">
 
 		<!-- global styles -->
-		
 		<link href=<?php echo base_url()."assets/themes/css/main.css" ; ?> rel="stylesheet">
 		<link href=<?php echo base_url()."assets/themes/css/flexslider.css";?> rel="stylesheet">
 
@@ -40,7 +39,7 @@
 		<script src=<?php echo base_url()."assets/themes/js/jquery-1.7.2.min.js";?>></script>
 		<script src=<?php echo base_url()."assets/bootstrap/js/bootstrap.min.js";?>></script>				
 		<script src=<?php echo base_url()."assets/themes/js/superfish.js";?>></script>	
-		<script src=<?php echo base_url()."assets/themes/js/jquery.scrolltotop.js";?>></script>
+		<script src=<?php echo base_url()."assets/themes/js/jquery.scrolltotopLogin.js";?>></script>
 		<!--[if lt IE 9]>			
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 			<script src="js/respond.min.js"></script>
@@ -76,7 +75,7 @@
 			<section class="navbar main-menu">
 				<div class="navbar-inner main-menu">				
 					<img src="<?php echo base_url('assets/img/logo.png'); ?> " style="width: 11%; height: 100%; margin-left:-10px;"/>
-					
+
 					<nav id="menu" class="pull-right">
 						<ul>
 							<li><a href="<?php echo base_url("home")?>">Home</a>					
@@ -400,8 +399,8 @@
 				<span>Copyright 2013 bootstrappage template  All right reserved.</span>
 			</section>
 		</div>
-		<script src="themes/js/common.js"></script>
-		<script src="themes/js/jquery.flexslider-min.js"></script>
+		<script src="assets/themes/js/common.js"></script>
+		<script src="assets/themes/js/jquery.flexslider-min.js"></script>
 		<script type="text/javascript">
 			$(function() {
 				$(document).ready(function() {

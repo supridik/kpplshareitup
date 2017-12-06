@@ -78,7 +78,7 @@
 
 					<nav id="menu" class="pull-right">
 						<ul>
-							<li><a href="<?php echo base_url("home")?>">Home</a>					
+							<li><a href="<?php echo base_url("home_user/readDataUser")?>">Home</a>					
 								<!-- <ul>
 									<li><a href="./products.html">Lacinia nibh</a></li>									
 									<li><a href="./products.html">Eget molestie</a></li>
@@ -106,22 +106,9 @@
 					</nav>
 				</div>
 			</section>
-			<section  class="homepage-slider" id="home-slider">
-				<div class="flexslider">
-					<ul class="slides">
-						<li>
-							<img src="<?php echo base_url("assets/themes/images/carousel/banner-1.jpg"); ?>" alt="test" />
-						</li>
-						 <li>
-							<img src="<?php echo base_url("assets/themes/images/carousel/banner-2.jpg"); ?>" alt="test" />
-							<div class="intro">
-								<h1>Temui orang-orang baru</h1>
-								<p><span>Mungkin jodoh</span></p>
-								<p><span>dimulai dari membantu siapapun!</span></p>
-							</div>
-						</li> 
-					</ul>
-				</div>			
+			<section class="header_text sub">
+			<img class="pageBanner" src="<?php echo base_url("assets/themes/images/carousel/banner-1.jpg"); ?>" alt="Share-It-Up" >
+				<h4><span>Only one step away to share the kindness</span></h4>
 			</section>
 			<section class="header_text">
 				We stand for top quality templates. Our genuine developers always optimized bootstrap commercial templates. 

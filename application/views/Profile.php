@@ -50,7 +50,7 @@
 					<a href="index.html" class="logo pull-left"><img src="themes/images/logo.png" class="site_logo" alt=""></a>
 					<nav id="menu" class="pull-right">
 						<ul>
-							<li><a href="<?php echo base_url("home")?>">Home</a>					
+							<li><a href="<?php echo base_url("home_user/readDataUser")?>">Home</a>					
 								<!-- <ul>
 									<li><a href="./products.html">Lacinia nibh</a></li>									
 									<li><a href="./products.html">Eget molestie</a></li>

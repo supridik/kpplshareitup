@@ -29,13 +29,13 @@ class Login extends CI_Controller{
 		if($data){
 	    	$this->session->set_userdata('id_user',$data['id_user']);
         	$this->session->set_userdata('nama_user',$data['nama_user']);
-        	// $this->session->set_userdata('alamat',$data['alamat']);
-        	// $this->session->set_userdata('kecamatan',$data['kecamatan']);
-        	// $this->session->set_userdata('kelurahan',$data['kelurahan']);
-        	// $this->session->set_userdata('kode_pos',$data['kode_pos']);
-        	// $this->session->set_userdata('foto_profil',$data['foto_profil']);
-        	// $this->session->set_userdata('foto_ktp',$data['foto_ktp']);
-        	// $this->session->set_userdata('deskripsi',$data['deskripsi']);
+        	$this->session->set_userdata('alamat',$data['alamat']);
+        	$this->session->set_userdata('kecamatan',$data['kecamatan']);
+        	$this->session->set_userdata('kelurahan',$data['kelurahan']);
+        	$this->session->set_userdata('kode_pos',$data['kode_pos']);
+        	$this->session->set_userdata('foto_profil',$data['foto_profil']);
+        	$this->session->set_userdata('foto_ktp',$data['foto_ktp']);
+        	$this->session->set_userdata('deskripsi',$data['deskripsi']);
         	$this->session->set_userdata('username',$data['username']);
         	$this->session->set_userdata('isAdmin',$data['isAdmin']);
 	    	//redirect('home');

@@ -115,7 +115,7 @@
 								</div>
 
 								<div class="control-group">
-									<label for="password" class="control-label" style="margin-left:27px;">Kode Pos</label>
+									<label for="password" class="control-label" style="margin-left:27px;">Nomor KTP</label>
 									<div class="controls">
 										<input name="password" style="margin-left:27px;" type="password" placeholder="Enter your name" id="password" class="input-xlarge" required>
 									</div>
@@ -139,7 +139,7 @@
 							<fieldset>
 
 								<div class="control-group">
-									<label for="name2" class="control-label" style="margin-left:20px;">Nomor KTP</label>
+									<label for="name2" class="control-label" style="margin-left:20px;">Kode Pos</label>
 									<div class="controls">
 										<input name="user" style="margin-left:20px;" id="name2" type="text" placeholder="Enter your KTP Number" class="input-xlarge" required>
 									</div>

@@ -89,8 +89,8 @@
 			<section class="main-content">
 				<form role="form" method="post" action="<?php echo base_url('Login/aksi_login'); ?>">
 				<div class="row">
-					<div class="span5">				
-						<h4 class="title" style="margin-left:0px;"><span class="text"><strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLogin</strong> </span></h4>
+					<div class="span6">				
+						<h4 class="title" style="margin-left:0px;"><span class="text"><strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRegister</strong> Yourself</span></h4>
 						<form action="#" method="post">
 							<input type="hidden" name="next" value="/">
 							<fieldset>
@@ -106,46 +106,84 @@
 										<input name="password" style="margin-left:27px;" type="password" placeholder="Enter your password" id="password" class="input-xlarge" required>
 									</div>
 								</div>
-								<div class="control-group">
-									<input tabindex="3" class="btn btn-inverse large" style="margin-left:27px;" type="submit" value="Sign into your account">
-									<hr>
-									<p class="reset" style="margin-left:27px;">Recover your <a tabindex="4" href="#" title="Recover your username or password">username or password</a></p>
-								</div>
-							</fieldset>
-						</form>				
-					</div>
-
-					<div class="span7">					
-						<h4 class="title" style="margin-left:0px;"><span class="text">&nbsp&nbsp&nbsp&nbsp&nbspDon't have account?<strong>&nbspRegister</strong></span></h4>
-						<form action="" method="post" class="form-stacked">
-							<fieldset>
 
 								<div class="control-group">
-									<label for="name2" class="control-label" style="margin-left:20px;">Nama Lengkap</label>
+									<label for="password" class="control-label" style="margin-left:27px;">Nama Lengkap</label>
 									<div class="controls">
-										<input name="user" style="margin-left:20px;" id="name2" type="text" placeholder="Enter your name" class="input-xlarge" required>
+										<input name="password" style="margin-left:27px;" type="password" placeholder="Enter your name" id="password" class="input-xlarge" required>
 									</div>
 								</div>
 
 								<div class="control-group">
-									<label for="username2" class="control-label" style="margin-left:20px;">Username</label>
+									<label for="password" class="control-label" style="margin-left:27px;">Kode Pos</label>
+									<div class="controls">
+										<input name="password" style="margin-left:27px;" type="password" placeholder="Enter your name" id="password" class="input-xlarge" required>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label for="password" class="control-label" style="margin-left:27px;">Foto Profil</label>
+									<div class="controls">
+										<input type="file" name="image1" style="margin-left:27px;">
+									</div>
+								</div>
+
+								
+							</fieldset>
+									
+					</div>
+
+					<div class="span6">					
+						<h4 class="title" style="margin-left:0px;"><!-- <span class="text">&nbsp&nbsp&nbsp&nbsp&nbspDon't have account?<strong>&nbspRegister</strong></span> --></h4>
+						
+							<fieldset>
+
+								<div class="control-group">
+									<label for="name2" class="control-label" style="margin-left:20px;">Nomor KTP</label>
+									<div class="controls">
+										<input name="user" style="margin-left:20px;" id="name2" type="text" placeholder="Enter your KTP Number" class="input-xlarge" required>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label for="username2" class="control-label" style="margin-left:20px;">Alamat</label>
 									<div class="controls">
 										<input name="username" style="margin-left:20px;" id="username2" type="text" placeholder="Enter your username" class="input-xlarge" required>
 									</div>
 								</div>
 								
 								<div class="control-group">
-									<label for="password2" class="control-label" style="margin-left:20px;">Password:</label>
+									<label for="password2" class="control-label" style="margin-left:20px;">Kecamatan</label>
 									<div class="controls">
 										<input name="password" style="margin-left:20px;" id="password2" type="password" placeholder="Enter your password" class="input-xlarge" required>
 									</div>
 								</div>
 
+								<div class="control-group">
+									<label for="password" class="control-label" style="margin-left:20px;">Kelurahan</label>
+									<div class="controls">
+										<input name="password" style="margin-left:20px;" type="password" placeholder="Enter your name" id="password" class="input-xlarge" required>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label for="password" class="control-label" style="margin-left:20px;">Foto KTP</label>
+									<div class="controls">
+										<input type="file" name="image2" style="margin-left:20px;">
+									</div>
+								</div>
+							
+
 								<div class="control-group" style="margin-left:20px;">
-									<p>Now that we know who you are. I'm not a mistake! In a comic, you know how you can tell who the arch-villain's going to be?</p>
+									
 								</div>
 								<hr>
-								<div class="actions" style="margin-left:20px;"><input name="submit" tabindex="9" class="btn btn-inverse large" type="submit" value="Create your account"></div>
+								<div class="control-group">
+									<input tabindex="3" class="btn btn-inverse large" style="margin-left:27px;" type="submit" value="Sign me up!">
+									<hr>
+									<!-- <p class="reset" style="margin-left:27px;">Recover your <a tabindex="4" href="#" title="Recover your username or password">username or password</a></p> -->
+								</div>
+								<!-- <div class="actions" style="margin-left:20px;"><input name="submit" tabindex="9" class="btn btn-inverse large" type="submit" value="Create your account"></div> -->
 							</fieldset>
 						</form>					
 					</div>				

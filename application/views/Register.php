@@ -11,6 +11,8 @@
 		<link href=<?php echo base_url()."assets/bootstrap/css/bootstrap-responsive.min.css"?> rel="stylesheet">		
 		<link href=<?php echo base_url()."assets/themes/css/bootstrappage.css"?> rel="stylesheet"/>
 		
+		<!-- logo icon -->
+		<link rel="icon" href="<?php echo base_url(); ?>assets/img/icon.png" type="image/png">
 		
 		<!-- global styles -->
 		<link href=<?php echo base_url()."assets/themes/css/flexslider.css"?> rel="stylesheet">
@@ -34,16 +36,16 @@
     <body>		
 		<div id="top-bar" class="container">
 			<div class="row">
-				<div class="span4">
+				<!-- <div class="span4">
 					<form method="POST" class="search_form">
 						<input type="text" class="input-block-level search-query" Placeholder="eg. T-sirt">
 					</form>
-				</div>
+				</div> -->
 				<div class="span8">
 					<div class="account pull-right">
 						<ul class="user-menu">				
-							<li><a href=<?php echo base_url()."login"?>>Login</a></li>
-							<li><a href=<?php echo base_url()."register"?>>Register</a></li>	
+							<!-- <li><a href=<?php echo base_url()."login"?>>Login</a></li>
+							<li><a href=<?php echo base_url()."register"?>>Register</a> --></li>	
 						</ul>
 					</div>
 				</div>
@@ -54,9 +56,9 @@
 		<div id="wrapper" class="container">
 			<section class="navbar main-menu">
 				<div class="navbar-inner main-menu">				
-					<a href=<?php echo base_url().""?> class="logo pull-left"><img src="assets/img/logo2.png" class="site_logo" alt="" style="margin-left:-10px;"></a>
+					<a href=<?php echo base_url().""?> class="logo pull-left"><img src="assets/img/logo.png" class="site_logo" alt="" style="margin-left:-10px; width:11%;height:11%;"></a>
 					<nav id="menu" class="pull-right">
-						<ul>
+				<!-- 		<ul>
 							<li><a href="./products.html">Woman</a>					
 								<ul>
 									<li><a href="./products.html">Lacinia nibh</a></li>									
@@ -75,20 +77,20 @@
 							<li><a href="./products.html">Hangbag</a></li>
 							<li><a href="./products.html">Best Seller</a></li>
 							<li><a href="./products.html">Top Seller</a></li>
-						</ul>
+						</ul> -->
 					</nav>
 				</div>
 			</section>			
 			<section class="header_text sub">
-			<img class="pageBanner" src="themes/images/pageBanner.png" alt="Share-It-Up" >
-				<h4><span>Login or Register</span></h4>
+			<img class="pageBanner" src="<?php echo base_url("assets/themes/images/carousel/banner-1.jpg"); ?>" alt="Share-It-Up" >
+				<h4><span>Only one step away to share the kindness</span></h4>
 			</section>			
 
-			<section class="main-content">	
-				<form action="<?php echo base_url()."Front/aksi_login";?>" method="POST" class="form login">
+			<section class="main-content">
+				<form role="form" method="post" action="<?php echo base_url('Login/aksi_login'); ?>">
 				<div class="row">
 					<div class="span5">				
-						<h4 class="title" style="margin-left:0px;"><span class="text"><strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLogin</strong> Form</span></h4>
+						<h4 class="title" style="margin-left:0px;"><span class="text"><strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLogin</strong> </span></h4>
 						<form action="#" method="post">
 							<input type="hidden" name="next" value="/">
 							<fieldset>
@@ -114,8 +116,8 @@
 					</div>
 
 					<div class="span7">					
-						<h4 class="title" style="margin-left:0px;"><span class="text"><strong>&nbsp&nbsp&nbsp&nbsp&nbspRegister</strong> Form</span></h4>
-						<form action="#" method="post" class="form-stacked">
+						<h4 class="title" style="margin-left:0px;"><span class="text">&nbsp&nbsp&nbsp&nbsp&nbspDon't have account?<strong>&nbspRegister</strong></span></h4>
+						<form action="" method="post" class="form-stacked">
 							<fieldset>
 
 								<div class="control-group">

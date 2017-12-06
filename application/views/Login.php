@@ -82,8 +82,8 @@
 				</div>
 			</section>			
 			<section class="header_text sub">
-			<img class="pageBanner" src="themes/images/pageBanner.png" alt="Share-It-Up" >
-				<h4><span>Because Sharing is Caring</span></h4>
+			<img class="pageBanner" src="<?php echo base_url("assets/themes/images/carousel/banner-1.jpg"); ?>" alt="Share-It-Up" >
+				<h4><span>Only one step away to share the kindness</span></h4>
 			</section>			
 
 			<section class="main-content">
@@ -117,37 +117,11 @@
 
 					<div class="span7">					
 						<h4 class="title" style="margin-left:0px;"><span class="text">&nbsp&nbsp&nbsp&nbsp&nbspDon't have account?<strong>&nbspRegister</strong></span></h4>
-						<form action="" method="post" class="form-stacked">
-							<fieldset>
-
-								<div class="control-group">
-									<label for="name2" class="control-label" style="margin-left:20px;">Nama Lengkap</label>
-									<div class="controls">
-										<input name="user" style="margin-left:20px;" id="name2" type="text" placeholder="Enter your name" class="input-xlarge" required>
-									</div>
-								</div>
-
-								<div class="control-group">
-									<label for="username2" class="control-label" style="margin-left:20px;">Username</label>
-									<div class="controls">
-										<input name="username" style="margin-left:20px;" id="username2" type="text" placeholder="Enter your username" class="input-xlarge" required>
-									</div>
-								</div>
+						
+						<form action="<?php echo base_url("Register");?>" >		
 								
-								<div class="control-group">
-									<label for="password2" class="control-label" style="margin-left:20px;">Password:</label>
-									<div class="controls">
-										<input name="password" style="margin-left:20px;" id="password2" type="password" placeholder="Enter your password" class="input-xlarge" required>
-									</div>
-								</div>
-
-								<div class="control-group" style="margin-left:20px;">
-									<p>Now that we know who you are. I'm not a mistake! In a comic, you know how you can tell who the arch-villain's going to be?</p>
-								</div>
-								<hr>
-								<div class="actions" style="margin-left:20px;"><input name="submit" tabindex="9" class="btn btn-inverse large" type="submit" value="Create your account"></div>
-							</fieldset>
-						</form>					
+								<div style="margin-left:20px;"><button tabindex="9" class="btn btn-inverse large"  action="<?php echo base_url("Register"); ?>" >Create Your Own Account</button></div>
+							</form>					
 					</div>				
 				</div>
 			</section>			

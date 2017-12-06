@@ -13,8 +13,6 @@ class Login extends CI_Controller{
 	}
 
 	public function index(){
-		if($this->session->userdata('id_user')){
-			redirect('home');}
 
 
 		$this->load->view('login');	
@@ -40,7 +38,13 @@ class Login extends CI_Controller{
         	// $this->session->set_userdata('deskripsi',$data['deskripsi']);
         	$this->session->set_userdata('username',$data['username']);
         	$this->session->set_userdata('isAdmin',$data['isAdmin']);
-	    	redirect('home');
+	    	//redirect('home');
+	    	if ($this->session->userdata('isAdmin')==TRUE) { // Halaman Admin
+				redirect('home_admin');
+			}
+			else if ($this->session->userdata('isAdmin')==FALSE) { // Halaman User
+				redirect('home_user');
+			}
 	    	//$this->load->view('Home');
         }	else{
                 	$message = "Username / Password salah";

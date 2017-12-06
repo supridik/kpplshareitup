@@ -84,7 +84,13 @@
 									<li><a href="./products.html">Varius purus</a></li>									
 								</ul> -->
 							</li>															
-							<li><a href="">Profil</a></li>			
+							<li><a href="<?php echo base_url("profile")?>">Profil</a>
+								<!-- <ul>
+									<li><a href="./products.html">Lacinia nibh</a></li>									
+									<li><a href="./products.html">Eget molestie</a></li>
+									<li><a href="./products.html">Varius purus</a></li>									
+								</ul> -->
+							</li>
 							<li><a href="">Barang</a>
 								<!-- <ul>									
 									<li><a href="./products.html">Gifts and Tech</a></li>

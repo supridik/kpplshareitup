@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Share-it-up! : Login / Register Page</title>
+		<title>Share-it-up! : Register Page</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
@@ -108,21 +108,21 @@
 								</div>
 
 								<div class="control-group">
-									<label for="password" class="control-label" style="margin-left:27px;">Nama Lengkap</label>
+									<label for="nama" class="control-label" style="margin-left:27px;">Nama Lengkap</label>
 									<div class="controls">
-										<input name="password" style="margin-left:27px;" type="password" placeholder="Enter your name" id="password" class="input-xlarge" required>
+										<input name="nama" style="margin-left:27px;" type="text" placeholder="Enter your name" id="nama" class="input-xlarge" required>
 									</div>
 								</div>
 
 								<div class="control-group">
-									<label for="password" class="control-label" style="margin-left:27px;">Nomor KTP</label>
+									<label for="ktp" class="control-label" style="margin-left:27px;">Nomor KTP</label>
 									<div class="controls">
-										<input name="password" style="margin-left:27px;" type="password" placeholder="Enter your name" id="password" class="input-xlarge" required>
+										<input name="ktp" style="margin-left:27px;" type="text" placeholder="Enter your name" id="ktp" class="input-xlarge" required>
 									</div>
 								</div>
 
 								<div class="control-group">
-									<label for="password" class="control-label" style="margin-left:27px;">Foto Profil</label>
+									<label for="" class="control-label" style="margin-left:27px;">Foto Profil</label>
 									<div class="controls">
 										<input type="file" name="image1" style="margin-left:27px;">
 									</div>
@@ -139,35 +139,35 @@
 							<fieldset>
 
 								<div class="control-group">
-									<label for="name2" class="control-label" style="margin-left:20px;">Kode Pos</label>
+									<label for="kodepos" class="control-label" style="margin-left:20px;">Kode Pos</label>
 									<div class="controls">
-										<input name="user" style="margin-left:20px;" id="name2" type="text" placeholder="Enter your KTP Number" class="input-xlarge" required>
+										<input name="kodepos" style="margin-left:20px;" id="kodepos" type="text" placeholder="Enter your KTP Number" class="input-xlarge" required>
 									</div>
 								</div>
 
 								<div class="control-group">
-									<label for="username2" class="control-label" style="margin-left:20px;">Alamat</label>
+									<label for="alamat" class="control-label" style="margin-left:20px;">Alamat</label>
 									<div class="controls">
-										<input name="username" style="margin-left:20px;" id="username2" type="text" placeholder="Enter your username" class="input-xlarge" required>
+										<input name="alamat" style="margin-left:20px;" id="alamat" type="text" placeholder="Enter your username" class="input-xlarge" required>
 									</div>
 								</div>
 								
 								<div class="control-group">
-									<label for="password2" class="control-label" style="margin-left:20px;">Kecamatan</label>
+									<label for="kecamatan" class="control-label" style="margin-left:20px;">Kecamatan</label>
 									<div class="controls">
-										<input name="password" style="margin-left:20px;" id="password2" type="password" placeholder="Enter your password" class="input-xlarge" required>
+										<input name="kecamatan" style="margin-left:20px;" id="kecamatan" type="text" placeholder="Enter your password" class="input-xlarge" required>
 									</div>
 								</div>
 
 								<div class="control-group">
-									<label for="password" class="control-label" style="margin-left:20px;">Kelurahan</label>
+									<label for="kelurahan" class="control-label" style="margin-left:20px;">Kelurahan</label>
 									<div class="controls">
-										<input name="password" style="margin-left:20px;" type="password" placeholder="Enter your name" id="password" class="input-xlarge" required>
+										<input name="kelurahan" style="margin-left:20px;" type="text" placeholder="Enter your name" id="kelurahan" class="input-xlarge" required>
 									</div>
 								</div>
 
 								<div class="control-group">
-									<label for="password" class="control-label" style="margin-left:20px;">Foto KTP</label>
+									<label for="" class="control-label" style="margin-left:20px;">Foto KTP</label>
 									<div class="controls">
 										<input type="file" name="image2" style="margin-left:20px;">
 									</div>

@@ -19,27 +19,13 @@ class Home_Admin extends CI_Controller{
 	public function index(){
 		//$data['results'] = $this->Model_futsal->login_user($username,$pass);
         //$this->load->helper(array('form','url'));
-		//$this->load->view('home_admin');		
-	}
-
-	public function Admin()
-	{
-		if($this->session->userdata('isAdmin')==TRUE)
-		{
-			redirect('home_admin/readDataAdmin');
-		}else{
-			redirect('login');}
-	}
-
-	public function readDataAdmin() {
-	    //$this->load->view('Komentar', array('data' => $this->My_Model->getDataKomentar()));
-		//$data = $this->My_Model->getDataKomentar();
-		//$this->load->view('Komentar', array('data' => $data));
-        $data=$this->Model_futsal->getDataAdmin('user','','')->result_array();
+		//$this->load->view('home_admin');
+		$data=$this->Model_futsal->getDataAdmin('user','','')->result_array();
         $kirim['data']  = $data;
-        $this->load->view('home_admin', $kirim);
-        
-  	}
+
+		$this->load->view('Home_Admin', $kirim);
+	}
+
 
 
 

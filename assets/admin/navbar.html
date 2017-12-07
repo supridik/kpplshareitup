@@ -7,42 +7,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Dashboard Admin</title>
+  <title>SB Admin - Start Bootstrap Template</title>
   <!-- Bootstrap core CSS-->
-  <link href="assets/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
-  <link href="assets/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <!-- Page level plugin CSS-->
-  <link href="assets/admin/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Custom styles for this template-->
-  <link href="assets/admin/css/sb-admin.css" rel="stylesheet">
+  <link href="css/sb-admin.css" rel="stylesheet">
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="">Admin</a>
+    <a class="navbar-brand" href="index.html">Start Bootstrap</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="User">
-          <a class="nav-link" href="">
-            <i class="fa fa-fw fa-user"></i>
-            <span class="nav-link-text">User</span>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="index.html">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Dashboard</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Barang">
-          <a class="nav-link" href="Admin_Barang">
-            <i class="fa fa-fw fa-briefcase"></i>
-            <span class="nav-link-text">Barang</span>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" href="charts.html">
+            <i class="fa fa-fw fa-area-chart"></i>
+            <span class="nav-link-text">Charts</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Transaksi Barang">
-          <a class="nav-link" href="Admin_Transaksi">
-            <i class="fa fa-fw fa-archive"></i>
-            <span class="nav-link-text">Transaksi Barang</span>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="tables.html">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">Tables</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-wrench"></i>
+            <span class="nav-link-text">Components</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents">
+            <li>
+              <a href="navbar.html">Navbar</a>
+            </li>
+            <li>
+              <a href="cards.html">Cards</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-file"></i>
+            <span class="nav-link-text">Example Pages</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseExamplePages">
+            <li>
+              <a href="login.html">Login Page</a>
+            </li>
+            <li>
+              <a href="register.html">Registration Page</a>
+            </li>
+            <li>
+              <a href="forgot-password.html">Forgot Password Page</a>
+            </li>
+            <li>
+              <a href="blank.html">Blank Page</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-sitemap"></i>
+            <span class="nav-link-text">Menu Levels</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseMulti">
+            <li>
+              <a href="#">Second Level Item</a>
+            </li>
+            <li>
+              <a href="#">Second Level Item</a>
+            </li>
+            <li>
+              <a href="#">Second Level Item</a>
+            </li>
+            <li>
+              <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Third Level</a>
+              <ul class="sidenav-third-level collapse" id="collapseMulti2">
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+                <li>
+                  <a href="#">Third Level Item</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-link"></i>
+            <span class="nav-link-text">Link</span>
           </a>
         </li>
       </ul>
@@ -53,7 +122,6 @@
           </a>
         </li>
       </ul>
-
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -133,6 +201,18 @@
           </div>
         </li>
         <li class="nav-item">
+          <form class="form-inline my-2 my-lg-0 mr-lg-2">
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+            </div>
+          </form>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
             <i class="fa fa-fw fa-sign-out"></i>Logout</a>
         </li>
@@ -144,64 +224,24 @@
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="">Dashboard</a>
+          <a href="#">Dashboard</a>
         </li>
-        <li class="breadcrumb-item active">User</li>
+        <li class="breadcrumb-item active">Navbar</li>
       </ol>
-      <!-- Example DataTables Card-->
-      <div class="card mb-3">
-        <div class="card-header">
-          <i class="fa fa-users"></i> Data User</div>
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-              	<thead>
-                    <th style="text-align: center;">No</th>
-                    <th style="text-align: center;">Nama</th>  
-                    <th style="text-align: center;">Alamat</th>
-                    <th style="text-align: center;">Kecamatan</th>
-                    <th style="text-align: center;">Kelurahan</th>
-                    <th style="text-align: center;">Kode Pos</th>
-                    <th style="text-align: center;">Foto Profil</th>
-                    <th style="text-align: center;">Foto KTP</th>
-                    <th style="text-align: center;">Deskripsi</th>
-                </thead>
-                    
-                <tbody style="text-align: center;">
-                    <?php foreach ($data as $x) { ?>
-                    <tr>
-                        
-                    <td><?php echo $x['id_user']; ?></td>
-                    <td><?php echo $x['nama_user']; ?></td>
-                    <td><?php echo $x['alamat']; ?></td>
-                    <td><?php echo $x['kecamatan']; ?></td>
-                    <td><?php echo $x['kelurahan']; ?></td>
-                    <td><?php echo $x['kode_pos']; ?></td>
-                    <td><?php echo $x['foto_profil']; ?></td>
-                    <td><?php echo $x['foto_ktp']; ?></td>
-                    <td><?php echo $x['deskripsi']; ?></td>
-
-                        
-                    </tr>
-                    <?php } ?>
-                </tbody>
-            </table>
-          </div>
-        </div>
-        <!-- SETING CURDATE DAN CURTIME -->
-        <?php 
-        	$now = new DateTime();
-			$now->setTimezone(new DateTimezone('Asia/Jakarta'));
-        ?>
-        <div class="card-footer small text-muted">Updated <?php echo date("d-M-Y");?> at <?php echo $now->format('H:i:s');?></div>
-      </div>
+      <h1>Navbar</h1>
+      <hr>
+      <p>The SB Admin navbar can be either fixed or static, and it supports the navbar-light and navbar-dark Bootstrap 4 classes.</p>
+      <a class="btn btn-primary" href="#" id="toggleNavPosition">Toggle Fixed/Static Navbar</a>
+      <a class="btn btn-primary" href="#" id="toggleNavColor">Toggle Navbar Color</a>
+      <!-- Blank div to give the page height to preview the fixed vs. static navbar-->
+      <div style="height: 1000px;"></div>
     </div>
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
-          <small>Copyright ©Share-It-Up 2017</small>
+          <small>Copyright © Your Website 2017</small>
         </div>
       </div>
     </footer>
@@ -222,25 +262,36 @@
           <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="<?php echo site_url('Logout'); ?>">Logout</a>
+            <a class="btn btn-primary" href="login.html">Logout</a>
           </div>
         </div>
       </div>
     </div>
     <!-- Bootstrap core JavaScript-->
-    <script src="assets/admin/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Core plugin JavaScript-->
-    <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
-    <!-- Page level plugin JavaScript-->
-    <!-- <script src="vendor/chart.js/Chart.min.js"></script> -->
-    <!-- <script src="vendor/datatables/jquery.dataTables.js"></script> -->
-    <!-- <script src="vendor/datatables/dataTables.bootstrap4.js"></script> -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for all pages-->
-    <script src="assets/admin/js/sb-admin.min.js"></script>
+    <script src="js/sb-admin.min.js"></script>
     <!-- Custom scripts for this page-->
-    <script src="js/sb-admin-datatables.min.js"></script>
-    <script src="js/sb-admin-charts.min.js"></script>
+    <!-- Toggle between fixed and static navbar-->
+    <script>
+    $('#toggleNavPosition').click(function() {
+      $('body').toggleClass('fixed-nav');
+      $('nav').toggleClass('fixed-top static-top');
+    });
+
+    </script>
+    <!-- Toggle between dark and light navbar-->
+    <script>
+    $('#toggleNavColor').click(function() {
+      $('nav').toggleClass('navbar-dark navbar-light');
+      $('nav').toggleClass('bg-dark bg-light');
+      $('body').toggleClass('bg-dark bg-light');
+    });
+
+    </script>
   </div>
 </body>
 

@@ -39,7 +39,7 @@
 		<script src=<?php echo base_url()."assets/themes/js/jquery-1.7.2.min.js";?>></script>
 		<script src=<?php echo base_url()."assets/bootstrap/js/bootstrap.min.js";?>></script>				
 		<script src=<?php echo base_url()."assets/themes/js/superfish.js";?>></script>	
-		<script src=<?php echo base_url()."assets/themes/js/jquery.scrolltotopLogin.js";?>></script>
+		<script src=<?php echo base_url()."assets/themes/js/jquery.scrolltotop.js";?>></script>
 		<!--[if lt IE 9]>			
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 			<script src="js/respond.min.js"></script>
@@ -49,7 +49,7 @@
     <body>
 
 
-    <form action="<?php echo base_url().""; ?>" method="POST" class="form login">
+    <form action="<?php echo base_url()."Login/aksi_login"; ?>" method="POST" class="form login">
 		<div id="top-bar" class="container">
 			<div class="row">
 				<div class="span4">
@@ -78,7 +78,7 @@
 
 					<nav id="menu" class="pull-right">
 						<ul>
-							<li><a href="<?php echo base_url("home_user/readDataUser")?>">Home</a>					
+							<li><a href="<?php echo base_url("home")?>">Home</a>					
 								<!-- <ul>
 									<li><a href="./products.html">Lacinia nibh</a></li>									
 									<li><a href="./products.html">Eget molestie</a></li>

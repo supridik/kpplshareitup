@@ -1,7 +1,7 @@
 <?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
  
-class Home_Admin extends CI_Controller{
+class Admin_Transaksi extends CI_Controller{
 
 	function __construct(){	
 		parent::__construct();		
@@ -20,10 +20,10 @@ class Home_Admin extends CI_Controller{
 		//$data['results'] = $this->Model_futsal->login_user($username,$pass);
         //$this->load->helper(array('form','url'));
 		//$this->load->view('home_admin');
-		$data=$this->Model_futsal->getDataAdmin('user','','')->result_array();
-        $kirim['data']  = $data;
+		// $data=$this->Model_futsal->getDataAdmin('user','','')->result_array();
+  //       $kirim['data']  = $data;
 
-		$this->load->view('Home_Admin', $kirim);
+		$this->load->view('Admin_Transaksi');
 		// $now = new DateTime();
 		// $now->setTimezone(new DateTimezone('Asia/Jakarta'));
 	}

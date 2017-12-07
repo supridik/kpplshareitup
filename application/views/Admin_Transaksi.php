@@ -28,7 +28,7 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="User">
-          <a class="nav-link" href="">
+          <a class="nav-link" href="Home_Admin">
             <i class="fa fa-fw fa-user"></i>
             <span class="nav-link-text">User</span>
           </a>
@@ -146,7 +146,7 @@
         <li class="breadcrumb-item">
           <a href="">Dashboard</a>
         </li>
-        <li class="breadcrumb-item active">User</li>
+        <li class="breadcrumb-item active">Transaksi Barang</li>
       </ol>
       <!-- Example DataTables Card-->
       <div class="card mb-3">
@@ -191,7 +191,7 @@
         <!-- SETING CURDATE DAN CURTIME -->
         <?php 
         	$now = new DateTime();
-			$now->setTimezone(new DateTimezone('Asia/Jakarta'));
+          $now->setTimezone(new DateTimezone('Asia/Jakarta'));
         ?>
         <div class="card-footer small text-muted">Updated <?php echo date("d-M-Y");?> at <?php echo $now->format('H:i:s');?></div>
       </div>

@@ -108,11 +108,11 @@
 			</section>
 			<section class="header_text sub">
 			<img class="pageBanner" src="<?php echo base_url("assets/themes/images/carousel/banner-1.jpg"); ?>" alt="Share-It-Up" >
-				<h4><span>Only one step away to share the kindness</span></h4>
+				<h4><span>Share the kindness</span></h4>
 			</section>
 			<section class="header_text">
 				We stand for top quality templates. Our genuine developers always optimized bootstrap commercial templates. 
-				<br/>Don't miss to use our cheap abd best bootstrap templates.
+				<br/>Don't miss it
 			</section>
 			<section class="main-content">
 				<div class="row">
@@ -120,7 +120,7 @@
 						<div class="row">
 							<div class="span12">
 								<h4 class="title">
-									<span class="pull-left"><span class="text"><span class="line">Feature <strong>Products</strong></span></span></span>
+									<span class="pull-left"><span class="text"><span class="line">Baru saja <strong>Masuk</strong></span></span></span>
 									<span class="pull-right">
 										<a class="left button" href="#myCarousel" data-slide="prev"></a><a class="right button" href="#myCarousel" data-slide="next"></a>
 									</span>
@@ -128,17 +128,19 @@
 								<div id="myCarousel" class="myCarousel carousel slide">
 									<div class="carousel-inner">
 										<div class="active item">
-											<ul class="thumbnails">												
+											<ul class="thumbnails">								<?php foreach ($data as $x) { ?>				
 												<li class="span3">
 													<div class="product-box">
 														<span class="sale_tag"></span>
-														<p><a href="product_detail.html"><img src="themes/images/ladies/1.jpg" alt="" /></a></p>
-														<a href="product_detail.html" class="title">Ut wisi enim ad</a><br/>
-														<a href="products.html" class="category">Commodo consequat</a>
-														<p class="price">$17.25</p>
+														<p><a href="product_detail.html"><img src="<?php echo base_url($x['foto_barang']); ?>" alt="" /></a></p>
+														<a href="product_detail.html" class="title"><?php echo $x['nama_barang'] ?></a><br/>
+														<a href="products.html" class="category"><?php echo $x['jenis'] ?></a>
+														<!-- <p class="price">$17.25</p> -->
 													</div>
 												</li>
-												<li class="span3">
+
+												<?php } ?>
+												<!-- <li class="span3">
 													<div class="product-box">
 														<span class="sale_tag"></span>
 														<p><a href="product_detail.html"><img src="themes/images/ladies/2.jpg" alt="" /></a></p>
@@ -198,7 +200,7 @@
 														<a href="products.html" class="category">Quis nostrud</a>
 														<p class="price">$35.50</p>
 													</div>
-												</li>																																	
+												</li>				 -->																													
 											</ul>
 										</div>
 									</div>							
@@ -293,11 +295,12 @@
 								</div>
 							</div>						
 						</div>
-						<div class="row feature_box">						
+						<div class="row feature_box">	
+											
 							<div class="span4">
 								<div class="service">
 									<div class="responsive">	
-										<img src="themes/images/feature_img_2.png" alt="" />
+										<img src="" alt="" />
 										<h4>MODERN <strong>DESIGN</strong></h4>
 										<p>Lorem Ipsum is simply dummy text of the printing and printing industry unknown printer.</p>									
 									</div>

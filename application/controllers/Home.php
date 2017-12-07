@@ -12,14 +12,16 @@ class Home extends CI_Controller{
 			redirect('Home_admin/readDataAdmin');
 		}
 		
-		$this->load->model('Model_futsal');
+		$this->load->model('Model_kelolaBarang');
 	}
+
 
 
 	public function index(){
 		//$data['results'] = $this->Model_futsal->login_user($username,$pass);
         //$this->load->helper(array('form','url'));
-		$this->load->view('Home');	
+        $data = $this->Model_kelolaBarang->tampilDetail();
+		$this->load->view('Home', array('data' => $data));	
 		// if($this->session->userdata('isAdmin')==FALSE)
 		// {
 		// 	redirect('Home');

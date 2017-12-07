@@ -3,7 +3,7 @@
  
 	if(!$user_id){
  
-  		redirect('login');
+  		redirect('Login');
 	}
  
 ?>
@@ -49,7 +49,7 @@
     <body>
 
 
-    <form action="<?php echo base_url()."Login/aksi_login"; ?>" method="POST" class="form login">
+    <form action="<?php echo base_url().""; ?>" method="POST" class="form login">
 		<div id="top-bar" class="container">
 			<div class="row">
 				<div class="span4">

@@ -12,7 +12,7 @@ class Admin_Transaksi extends CI_Controller{
 			redirect('Home_user');
 		}
 		
-		$this->load->model('Model_futsal');
+		$this->load->model('Model_kelolaTransaksi');
 	}
 
 
@@ -20,10 +20,10 @@ class Admin_Transaksi extends CI_Controller{
 		//$data['results'] = $this->Model_futsal->login_user($username,$pass);
         //$this->load->helper(array('form','url'));
 		//$this->load->view('home_admin');
-		// $data=$this->Model_futsal->getDataAdmin('user','','')->result_array();
-  //       $kirim['data']  = $data;
+		$data=$this->Model_kelolaTransaksi->getDataTransaksi('transaksi_barang','','')->result_array();
+        $kirim['data']  = $data;
 
-		$this->load->view('Admin_Transaksi');
+		$this->load->view('Admin_Transaksi', $kirim);
 		// $now = new DateTime();
 		// $now->setTimezone(new DateTimezone('Asia/Jakarta'));
 	}

@@ -12,7 +12,7 @@ class Admin_Barang extends CI_Controller{
 			redirect('Home_user');
 		}
 		
-		$this->load->model('Model_futsal');
+		$this->load->model('Model_kelolaBarang');
 	}
 
 
@@ -21,10 +21,10 @@ class Admin_Barang extends CI_Controller{
         //$this->load->helper(array('form','url'));
 		//$this->load->view('home_admin');
 		
-		// $data=$this->Model_futsal->getDataAdmin('user','','')->result_array();
-  //       $kirim['data']  = $data;
+		$data=$this->Model_kelolaBarang->getDataBarang('barang','','')->result_array();
+        $kirim['data']  = $data;
 
-		$this->load->view('Admin_Barang');
+		$this->load->view('Admin_Barang', $kirim);
 		
 		// $now = new DateTime();
 		// $now->setTimezone(new DateTimezone('Asia/Jakarta'));

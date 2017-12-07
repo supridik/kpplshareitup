@@ -39,13 +39,6 @@ class Model_futsal extends CI_Model {
     	return $this->db->select('*')->get_where($tabel);
   	}
 
-    public function getDataBarang() {
-      //$this->db->select("*");
-      //$this->db->from('user');
-      //$query = $this->db->get();
-      //return $query->result_array();
-    }
-
   	public function delete_item_komentar($item){ // >>>>>>>>>>>>>>>>>>>>>>>>MASIH BELUM SELESAI HEHEHEHEHEHEHE<<<<<<<<<<<<<<
     	$this->db->where_in('id_user', $item);
     	$this->db->delete('user');

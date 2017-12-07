@@ -151,35 +151,33 @@
       <!-- Example DataTables Card-->
       <div class="card mb-3">
         <div class="card-header">
-          <i class="fa fa-users"></i> Data User</div>
+          <i class="fa fa-database"></i> Data Barang</div>
         <div class="card-body">
           <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
               	<thead>
-                    <th style="text-align: center;">No</th>
-                    <th style="text-align: center;">Nama</th>  
-                    <th style="text-align: center;">Alamat</th>
-                    <th style="text-align: center;">Kecamatan</th>
-                    <th style="text-align: center;">Kelurahan</th>
-                    <th style="text-align: center;">Kode Pos</th>
-                    <th style="text-align: center;">Foto Profil</th>
-                    <th style="text-align: center;">Foto KTP</th>
-                    <th style="text-align: center;">Deskripsi</th>
+                    <th style="text-align: center;">ID Barang</th>
+                    <th style="text-align: center;">Nama Barang</th>  
+                    <th style="text-align: center;">Jenis Barang</th>
+                    <th style="text-align: center;">Foto Barang</th>
+                    <th style="text-align: center;">Deskripsi Barang</th>
+                    <th style="text-align: center;">Dipinjam</th>
+                    <th style="text-align: center;">Dikembalikan</th>
+                    <th style="text-align: center;">ID Pemilik</th>
                 </thead>
                     
                 <tbody style="text-align: center;">
                     <?php foreach ($data as $x) { ?>
                     <tr>
                         
-                    <td><?php echo $x['id_user']; ?></td>
-                    <td><?php echo $x['nama_user']; ?></td>
-                    <td><?php echo $x['alamat']; ?></td>
-                    <td><?php echo $x['kecamatan']; ?></td>
-                    <td><?php echo $x['kelurahan']; ?></td>
-                    <td><?php echo $x['kode_pos']; ?></td>
-                    <td><?php echo $x['foto_profil']; ?></td>
-                    <td><?php echo $x['foto_ktp']; ?></td>
-                    <td><?php echo $x['deskripsi']; ?></td>
+                    <td><?php echo $x['id_barang']; ?></td>
+                    <td><?php echo $x['nama_barang']; ?></td>
+                    <td><?php echo $x['jenis']; ?></td>
+                    <td><?php echo $x['foto_barang']; ?></td>
+                    <td><?php echo $x['deskripsi_barang']; ?></td>
+                    <td><?php echo $x['dipinjam']; ?></td>
+                    <td><?php echo $x['dikembalikan']; ?></td>
+                    <td><?php echo $x['id_pemilik']; ?></td>
 
                         
                     </tr>

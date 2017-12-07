@@ -1,6 +1,6 @@
 <?php
 
-class Model_kelolaBarang extends CI_Model {
+class Model_kelolaTransaksi extends CI_Model {
 
 	public function tampilDetail() {
 
@@ -10,7 +10,7 @@ class Model_kelolaBarang extends CI_Model {
 
 	}
 
-	public function getDataBarang($tabel) { // mengambil data barang di database
+	public function getDataTransaksi($tabel) { // mengambil data transaksi barang di database
     	return $this->db->select('*')->get_where($tabel);
   	}
 

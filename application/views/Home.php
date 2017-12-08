@@ -386,7 +386,7 @@
 				</div>	
 			</section>
 			<section id="copyright">
-				<span>Copyright 2013 bootstrappage template  All right reserved.</span>
+				<span>Copyright ©Share-It-Up 2017</span>
 			</section>
 		</div>
 		<script src="assets/themes/js/common.js"></script>

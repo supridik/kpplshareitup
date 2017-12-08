@@ -96,18 +96,18 @@
 							<strong>Email:</strong>&nbsp;<a href="#">vietcuong_it@yahoo.com</a>					
 							</p>
 						</div>
-					</div>
-					<div class="span7">
+					</div> 
+					<div class="span7"> <?php foreach ($data as $x) { ?>
 						<p>Nama Lengkap</p>
-						<h4><?php echo $this->session->userdata('nama_user'); ?></h4>
+						<h4><?php echo $x['nama_user']; ?></h4>
 						<p>Alamat</p>
-						<h4><?php echo $this->session->userdata('alamat');?>, <?php echo $this->session->userdata('kelurahan');?>, <?php echo $this->session->userdata('kecamatan'); ?></h4>
+						<h4><?php echo $x['alamat']; ?>, <?php echo $x['kelurahan']; ?>, <?php echo $x['kecamatan']; ?></h4>
 						<p>Kode Pos</p>
-						<h4><?php echo $this->session->userdata('kode_pos');?></h4>
+						<h4><?php echo $x['kode_pos']; ?></h4>
 						<p>Deskripsi</p>
-						<h4><?php echo $this->session->userdata('deskripsi');?></h4>
+						<h4><?php echo $x['deskripsi']; ?></h4>
 						
-						
+						<?php } ?>
 						</form>
 					</div>				
 				</div>

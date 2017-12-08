@@ -175,8 +175,8 @@
                     <td><?php echo $x['jenis']; ?></td>
                     <td><?php echo $x['foto_barang']; ?></td>
                     <td><?php echo $x['deskripsi_barang']; ?></td>
-                    <td><?php echo $x['dipinjam']; ?></td>
-                    <td><?php echo $x['dikembalikan']; ?></td>
+                    <td><?php if ($x['dipinjam']==0) {echo 'Tidak';} else {echo 'Ya';} ?></td>
+                    <td><?php if ($x['dikembalikan']==0) {echo 'Tidak';} else {echo 'Ya';} ?></td>
                     <td><?php echo $x['id_pemilik']; ?></td>
 
                         
@@ -204,7 +204,7 @@
       </div>
     </footer>
     <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
+    <a class="scroll-to-top rounded" href="">
       <i class="fa fa-angle-up"></i>
     </a>
     <!-- Logout Modal-->

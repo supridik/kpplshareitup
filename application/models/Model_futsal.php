@@ -44,14 +44,8 @@ class Model_futsal extends CI_Model {
     	$this->db->delete('user');
   	}
 
-  	public function getDataSlider() {
-    	$data1 = $this->db->select('*')->from('user')->get();
-    	return $data1->result_array();
- 	  }
-
-  	public function getDataGallery() {
-    	$data2 = $this->db->select('*')->from('gallery')->get();
-    	return $data2->result_array();
-  	}
+  	public function input_data($data,$table){
+      $this->db->insert($table,$data);
+    }
 }
 ?>

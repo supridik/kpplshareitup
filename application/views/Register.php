@@ -28,10 +28,6 @@
 			<script src="js/respond.min.js"></script>
 		<![endif]-->
 
-		<?php
-    		include_once 'db_Config.php';
-    	?>
-
 	</head>
     <body>		
 		<div id="top-bar" class="container">
@@ -87,7 +83,7 @@
 			</section>			
 
 			<section class="main-content">
-				<form role="form" method="post" action="<?php echo base_url('Login/aksi_login'); ?>">
+				<form action="<?php echo base_url(). 'Register/tambahuser'; ?>" method="post">
 				<div class="row">
 					<div class="span6">				
 						<h4 class="title" style="margin-left:0px;"><span class="text"><strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRegister</strong> Yourself</span></h4>
@@ -117,7 +113,7 @@
 								<div class="control-group">
 									<label for="ktp" class="control-label" style="margin-left:27px;">Nomor KTP</label>
 									<div class="controls">
-										<input name="ktp" style="margin-left:27px;" type="text" placeholder="Enter your name" id="ktp" class="input-xlarge" required>
+										<input name="ktp" style="margin-left:27px;" type="text" placeholder="Enter your nomor ktp" id="ktp" class="input-xlarge" >
 									</div>
 								</div>
 
@@ -141,28 +137,28 @@
 								<div class="control-group">
 									<label for="kodepos" class="control-label" style="margin-left:20px;">Kode Pos</label>
 									<div class="controls">
-										<input name="kodepos" style="margin-left:20px;" id="kodepos" type="text" placeholder="Enter your KTP Number" class="input-xlarge" required>
+										<input name="kodepos" style="margin-left:20px;" id="kodepos" type="text" placeholder="Enter your kode pos" class="input-xlarge" >
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label for="alamat" class="control-label" style="margin-left:20px;">Alamat</label>
 									<div class="controls">
-										<input name="alamat" style="margin-left:20px;" id="alamat" type="text" placeholder="Enter your username" class="input-xlarge" required>
+										<input name="alamat" style="margin-left:20px;" id="alamat" type="text" placeholder="Enter your alamat" class="input-xlarge" >
 									</div>
 								</div>
 								
 								<div class="control-group">
 									<label for="kecamatan" class="control-label" style="margin-left:20px;">Kecamatan</label>
 									<div class="controls">
-										<input name="kecamatan" style="margin-left:20px;" id="kecamatan" type="text" placeholder="Enter your password" class="input-xlarge" required>
+										<input name="kecamatan" style="margin-left:20px;" id="kecamatan" type="text" placeholder="Enter your kecamatan" class="input-xlarge" >
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label for="kelurahan" class="control-label" style="margin-left:20px;">Kelurahan</label>
 									<div class="controls">
-										<input name="kelurahan" style="margin-left:20px;" type="text" placeholder="Enter your name" id="kelurahan" class="input-xlarge" required>
+										<input name="kelurahan" style="margin-left:20px;" type="text" placeholder="Enter your kelurahan" id="kelurahan" class="input-xlarge" >
 									</div>
 								</div>
 

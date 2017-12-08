@@ -28,10 +28,6 @@
 			<script src="js/respond.min.js"></script>
 		<![endif]-->
 
-		<?php
-    		include_once 'db_Config.php';
-    	?>
-
 	</head>
     <body>		
 		<div id="top-bar" class="container">
@@ -118,7 +114,7 @@
 					<div class="span7">					
 						<h4 class="title" style="margin-left:0px;"><span class="text">&nbsp&nbsp&nbsp&nbsp&nbspDon't have account?<strong>&nbspRegister</strong></span></h4>
 						
-						<form action="<?php echo base_url("Register");?>" >		
+						<form action="<?php echo base_url("register");?>" >		
 								
 								<div style="margin-left:20px;"><button tabindex="9" class="btn btn-inverse large"  action="<?php echo base_url("Register"); ?>" >Create Your Own Account</button></div>
 							</form>					

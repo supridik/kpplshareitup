@@ -46,10 +46,10 @@ class Login extends CI_Controller{
         	$this->session->set_userdata('isAdmin',$data['isAdmin']);
 	    	//redirect('home');
 	    	if ($this->session->userdata('isAdmin')==TRUE) { // Halaman Admin
-				redirect('Home_Admin');
+				redirect('home_admin');
 			}
 			else if ($this->session->userdata('isAdmin')==FALSE) { // Halaman User
-				redirect('Home');
+				redirect('home');
 			}
 	    	//$this->load->view('Home');
         }	else{

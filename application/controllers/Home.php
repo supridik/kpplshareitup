@@ -9,7 +9,7 @@ class Home extends CI_Controller{
 			redirect('login');
 		}
 		if($this->session->userdata('isAdmin')==TRUE) { // >>>>>>>>>>>>>>>>>>>MEMBATASI HALAMAN HOME_ADMIN JIKA MEMBUKA HALAMAN HOME_USER <<<<<<<<<<<<<<<<<<<<<<<<<<
-			redirect('Home_admin');
+			redirect('home_admin');
 		}
 		
 		$this->load->model('Model_kelolaBarang');

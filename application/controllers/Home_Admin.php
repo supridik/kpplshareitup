@@ -9,7 +9,7 @@ class Home_Admin extends CI_Controller{
 			redirect('login');
 		}
 		if($this->session->userdata('isAdmin')==FALSE) { // >>>>>>>>>>>>>>>>>>MEMBATASI HALAMAN HOME_USER JIKA MEMBUKA HALAMAN HOME_ADMIN <<<<<<<<<<<<<<<<<<<<<<<<<<
-			redirect('Home_user');
+			redirect('home');
 		}
 		
 		$this->load->model('Model_futsal');

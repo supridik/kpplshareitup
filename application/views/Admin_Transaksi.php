@@ -165,13 +165,12 @@
                 <tbody style="text-align: center;">
                     <?php foreach ($data as $x) { ?>
                     <tr>
-                        
+                       
                     <td><?php echo $x['id_peminjam']; ?></td>
                     <td><?php echo $x['id_barang']; ?></td>
-                    <td><?php echo $x['tgl_dipinjam']; ?></td>
-                    <td><?php echo $x['tgl_dikembalikan']; ?></td>
+                    <td><?php echo date ('d-m-Y',strtotime($x['tgl_dipinjam'])); ?></td>       <!-- MERUBAH FORMAT DATE TGL_DIPINJAM DI DATABASE JADI D/M/Y -->
+                    <td><?php echo date ('d-m-Y',strtotime($x['tgl_dikembalikan'])); ?></td>   <!-- MERUBAH FORMAT DATE TGL_DIKEMBALIKAN DI DATABASE JADI D/M/Y -->
 
-                        
                     </tr>
                     <?php } ?>
                 </tbody>

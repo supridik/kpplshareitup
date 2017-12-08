@@ -34,13 +34,13 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Barang">
-          <a class="nav-link" href="Admin_Barang">
+          <a class="nav-link" href="admin_barang">
             <i class="fa fa-fw fa-briefcase"></i>
             <span class="nav-link-text">Barang</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Transaksi Barang">
-          <a class="nav-link" href="Admin_Transaksi">
+          <a class="nav-link" href="admin_transaksi">
             <i class="fa fa-fw fa-archive"></i>
             <span class="nav-link-text">Transaksi Barang</span>
           </a>

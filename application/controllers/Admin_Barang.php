@@ -30,7 +30,10 @@ class Admin_Barang extends CI_Controller{
 		// $now->setTimezone(new DateTimezone('Asia/Jakarta'));
 	}
 
-
+	public function deleteBarang($ID){ //delete 1 komentar
+    	$res = $this->Model_kelolaBarang->delete_item_barang($ID);
+    	redirect('admin_barang');
+	}
 
 
 

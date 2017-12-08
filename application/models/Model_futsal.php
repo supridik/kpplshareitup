@@ -35,11 +35,11 @@ class Model_futsal extends CI_Model {
 		  //return $res;
     }
 
-    public function getDataAdmin($tabel) { // mengambil data di database
+    public function getDataAdmin($tabel) { // Mengambil data di database
     	return $this->db->select('*')->get_where($tabel);
   	}
 
-  	public function delete_item_komentar($item){ // >>>>>>>>>>>>>>>>>>>>>>>>MASIH BELUM SELESAI HEHEHEHEHEHEHE<<<<<<<<<<<<<<
+  	public function delete_item_user($item){ // Delete data di database
     	$this->db->where_in('id_user', $item);
     	$this->db->delete('user');
   	}

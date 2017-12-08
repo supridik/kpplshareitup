@@ -28,7 +28,10 @@ class Admin_Transaksi extends CI_Controller{
 		// $now->setTimezone(new DateTimezone('Asia/Jakarta'));
 	}
 
-
+	public function deleteTransaksi($ID){ //delete 1 komentar
+    	$res = $this->Model_kelolaTransaksi->delete_item_Transaksi($ID);
+    	redirect('admin_transaksi');
+	}
 
 
 

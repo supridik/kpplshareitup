@@ -28,7 +28,7 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="User">
-          <a class="nav-link" href="Home_Admin">
+          <a class="nav-link" href="home_admin">
             <i class="fa fa-fw fa-user"></i>
             <span class="nav-link-text">User</span>
           </a>
@@ -40,7 +40,7 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Transaksi Barang">
-          <a class="nav-link" href="Admin_Transaksi">
+          <a class="nav-link" href="admin_transaksi">
             <i class="fa fa-fw fa-archive"></i>
             <span class="nav-link-text">Transaksi Barang</span>
           </a>
@@ -164,6 +164,7 @@
                     <th style="text-align: center;">Dipinjam</th>
                     <th style="text-align: center;">Dikembalikan</th>
                     <th style="text-align: center;">ID Pemilik</th>
+                    <th style="text-align: center;"> </th>
                 </thead>
                     
                 <tbody style="text-align: center;">
@@ -178,6 +179,9 @@
                     <td><?php if ($x['dipinjam']==0) {echo 'Tidak';} else {echo 'Ya';} ?></td>
                     <td><?php if ($x['dikembalikan']==0) {echo 'Tidak';} else {echo 'Ya';} ?></td>
                     <td><?php echo $x['id_pemilik']; ?></td>
+                    <td align="center">
+                            <a href="<?php echo base_url()."Admin_Barang/deleteBarang/".$x['id_barang']; ?>"><button class="btn-block" style="border: solid 1px; margin-top: 10px; margin-bottom: 10px;">Delete</button></a>
+                    </td>
 
                         
                     </tr>

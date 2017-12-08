@@ -14,5 +14,10 @@ class Model_kelolaTransaksi extends CI_Model {
     	return $this->db->select('*')->get_where($tabel);
   	}
 
+  	public function delete_item_transaksi($item){ // Delete barang data di database
+    	$this->db->where_in('id_peminjam', $item);
+    	$this->db->delete('transaksi_barang');
+  	}
+
 }
 ?>

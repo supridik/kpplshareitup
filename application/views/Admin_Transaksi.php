@@ -28,19 +28,19 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="User">
-          <a class="nav-link" href="Home_Admin">
+          <a class="nav-link" href="home_admin">
             <i class="fa fa-fw fa-user"></i>
             <span class="nav-link-text">User</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Barang">
-          <a class="nav-link" href="Admin_Barang">
+          <a class="nav-link" href="admin_barang">
             <i class="fa fa-fw fa-briefcase"></i>
             <span class="nav-link-text">Barang</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Transaksi Barang">
-          <a class="nav-link" href="Admin_Transaksi">
+          <a class="nav-link" href="">
             <i class="fa fa-fw fa-archive"></i>
             <span class="nav-link-text">Transaksi Barang</span>
           </a>
@@ -160,6 +160,7 @@
                     <th style="text-align: center;">ID Barang</th>  
                     <th style="text-align: center;">Tanggal Dipinjam</th>
                     <th style="text-align: center;">Tanggal Pengembalian</th>
+                    <th style="text-align: center;"> </th>
                 </thead>
                     
                 <tbody style="text-align: center;">
@@ -170,6 +171,9 @@
                     <td><?php echo $x['id_barang']; ?></td>
                     <td><?php echo date ('d-m-Y',strtotime($x['tgl_dipinjam'])); ?></td>       <!-- MERUBAH FORMAT DATE TGL_DIPINJAM DI DATABASE JADI D/M/Y -->
                     <td><?php echo date ('d-m-Y',strtotime($x['tgl_dikembalikan'])); ?></td>   <!-- MERUBAH FORMAT DATE TGL_DIKEMBALIKAN DI DATABASE JADI D/M/Y -->
+                    <td align="center">
+                            <a href="<?php echo base_url()."Admin_Transaksi/deleteTransaksi/".$x['id_peminjam']; ?>"><button class="btn-block" style="border: solid 1px; margin-top: 10px; margin-bottom: 10px;">Delete</button></a>
+                    </td>
 
                     </tr>
                     <?php } ?>

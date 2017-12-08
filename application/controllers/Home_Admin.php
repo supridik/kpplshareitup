@@ -28,6 +28,10 @@ class Home_Admin extends CI_Controller{
 		// $now->setTimezone(new DateTimezone('Asia/Jakarta'));
 	}
 
+	public function deleteUser($ID){ //delete 1 komentar
+    	$res = $this->Model_futsal->delete_item_user($ID);
+    	redirect('home_admin');
+	}
 
 
 

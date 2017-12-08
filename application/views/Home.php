@@ -138,7 +138,7 @@
 														<!-- <p class="price">$17.25</p> -->
 													</div>
 												</li>
-
+												
 												<?php } ?>
 												<!-- <li class="span3">
 													<div class="product-box">

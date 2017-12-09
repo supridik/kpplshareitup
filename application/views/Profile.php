@@ -37,7 +37,7 @@
 				<div class="span8">
 					<div class="account pull-right">
 						<ul class="user-menu">				
-							<li><b>Hi, <?php echo $this->session->userdata('nama_user'); ?></b></li>
+						<li><b>Hi, <?php echo $this->session->userdata('username'); ?></b></li>
 							<li><a style="padding: 3px 5px;" class="btn btn-inverse large" href="<?php echo site_url('Logout'); ?>">Logout</a></li>		
 						</ul>
 					</div>
@@ -47,7 +47,7 @@
 		<div id="wrapper" class="container">
 			<section class="navbar main-menu">
 				<div class="navbar-inner main-menu">				
-					<a href="index.html" class="logo pull-left"><img src="themes/images/logo.png" class="site_logo" alt=""></a>
+					<a href="index.html" class="logo pull-left"><img src="<?php echo base_url('assets/img/logo.png'); ?>" class="site_logo" alt="" style="width: 11%; height: 100%; margin-left:-10px;" ></a>
 					<nav id="menu" class="pull-right">
 						<ul>
 							<li><a href="<?php echo base_url("home")?>">Home</a>					
@@ -73,16 +73,34 @@
 					</nav>
 				</div>
 			</section>							
-			<section class="google_map">
+			<!-- <section class="google_map">
 				<iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=74%2F6+Nguy%E1%BB%85n+V%C4%83n+Tho%E1%BA%A1i,+S%C6%A1n+Tr%C3%A0,+%C4%90%C3%A0+N%E1%BA%B5ng,+Vi%E1%BB%87t+Nam&amp;aq=0&amp;oq=74%2F6+Nguyen+Van+Thoai+Da+Nang,+Viet+Nam&amp;sll=37.0625,-95.677068&amp;sspn=41.546728,79.013672&amp;ie=UTF8&amp;hq=&amp;hnear=74+Nguy%E1%BB%85n+V%C4%83n+Tho%E1%BA%A1i,+Ng%C5%A9+H%C3%A0nh+S%C6%A1n,+Da+Nang,+Vietnam&amp;t=m&amp;ll=16.064537,108.24151&amp;spn=0.032992,0.039396&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
-			</section>
+			</section> -->
+			<?php foreach ($data as $x) { ?>
+
+				</div>
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /headerwrap -->
+
 			<section class="header_text sub">
+			<!-- <img class="pageBanner" src="<?php echo base_url("assets/img/GBP.jpg"); ?>" alt="Share-It-Up" > --><div class="col-md-12 ">
+                                        <center>
+                                            <a class="" href="<?php echo base_url($x['foto_profil']); ?>">
+                                                <img class="media-object dp img-circle" src="<?php echo base_url($x['foto_profil']); ?>" style="width: 180px;height:180px;">
+                                            </a>
+                                        </center>
+                                        <h3><?php echo $x['nama_user']; ?></h3>
+                                    </div> 
+				<h4>My Profile</span></h4>
+			</section>
+			<!-- <section class="header_text sub">
 			<img class="pageBanner" src="themes/images/pageBanner.png" alt="<?php echo $this->session->userdata('username'); ?>" >
 				<h4><span>My Profile</span></h4>
-			</section>
+			</section> -->
 			<section class="main-content">				
 				<div class="row">				
-					<div class="span5">
+				<!-- 	<div class="span5">
 						<div>
 							<h5>ADDITIONAL INFORMATION</h5>
 							<p><strong>Phone:</strong>&nbsp;(123) 456-7890<br>
@@ -96,8 +114,8 @@
 							<strong>Email:</strong>&nbsp;<a href="#">vietcuong_it@yahoo.com</a>					
 							</p>
 						</div>
-					</div> 
-					<div class="span7"> <?php foreach ($data as $x) { ?>
+					</div>  --><center>
+					<div class="col-md-12 	"> 
 						<p>Nama Lengkap</p>
 						<h4><?php echo $x['nama_user']; ?></h4>
 						<p>Alamat</p>
@@ -106,7 +124,7 @@
 						<h4><?php echo $x['kode_pos']; ?></h4>
 						<p>Deskripsi</p>
 						<h4><?php echo $x['deskripsi']; ?></h4>
-						
+						</center>
 						<?php } ?>
 						</form>
 					</div>				

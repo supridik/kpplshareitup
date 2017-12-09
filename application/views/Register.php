@@ -113,7 +113,7 @@
 								<div class="control-group">
 									<label for="ktp" class="control-label" style="margin-left:27px;">Nomor KTP</label>
 									<div class="controls">
-										<input name="ktp" style="margin-left:27px;" type="text" placeholder="Enter your nomor ktp" id="ktp" class="input-xlarge" >
+										<input name="ktp" style="margin-left:27px;" type="text" placeholder="Enter your nomor ktp" id="ktp" class="input-xlarge" required>
 									</div>
 								</div>
 
@@ -137,28 +137,28 @@
 								<div class="control-group">
 									<label for="kodepos" class="control-label" style="margin-left:20px;">Kode Pos</label>
 									<div class="controls">
-										<input name="kodepos" style="margin-left:20px;" id="kodepos" type="text" placeholder="Enter your kode pos" class="input-xlarge" >
+										<input name="kodepos" style="margin-left:20px;" id="kodepos" type="text" placeholder="Enter your kode pos" class="input-xlarge" required>
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label for="alamat" class="control-label" style="margin-left:20px;">Alamat</label>
 									<div class="controls">
-										<input name="alamat" style="margin-left:20px;" id="alamat" type="text" placeholder="Enter your alamat" class="input-xlarge" >
+										<input name="alamat" style="margin-left:20px;" id="alamat" type="text" placeholder="Enter your alamat" class="input-xlarge" required>
 									</div>
 								</div>
 								
 								<div class="control-group">
 									<label for="kecamatan" class="control-label" style="margin-left:20px;">Kecamatan</label>
 									<div class="controls">
-										<input name="kecamatan" style="margin-left:20px;" id="kecamatan" type="text" placeholder="Enter your kecamatan" class="input-xlarge" >
+										<input name="kecamatan" style="margin-left:20px;" id="kecamatan" type="text" placeholder="Enter your kecamatan" class="input-xlarge" required>
 									</div>
 								</div>
 
 								<div class="control-group">
 									<label for="kelurahan" class="control-label" style="margin-left:20px;">Kelurahan</label>
 									<div class="controls">
-										<input name="kelurahan" style="margin-left:20px;" type="text" placeholder="Enter your kelurahan" id="kelurahan" class="input-xlarge" >
+										<input name="kelurahan" style="margin-left:20px;" type="text" placeholder="Enter your kelurahan" id="kelurahan" class="input-xlarge" required>
 									</div>
 								</div>
 

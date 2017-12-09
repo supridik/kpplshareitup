@@ -21,5 +21,13 @@ class Model_kelolaBarang extends CI_Model {
     	$this->db->delete('barang');
   	}
 
+  	public function getBarangUser($id_user){
+
+  		$id_user=$this->session->userdata('id_user');
+
+  		$data=$this->db->query('select * from barang where id_pemilik='.$id_user);
+  		return $data->result_array();
+  	}
+
 }
 ?>

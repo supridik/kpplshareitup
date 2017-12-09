@@ -31,8 +31,8 @@ class Model_futsal extends CI_Model {
     }
 
    	public function UpdateData($tableName,$data,$where){
-		  //$res = $this->db->update($tableName,$data,$where);
-		  //return $res;
+		  $res = $this->db->update($tableName,$data,$where);
+		  return $res;
     }
 
     public function getDataAdmin($tabel) { // Mengambil data di database

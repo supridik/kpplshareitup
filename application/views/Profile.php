@@ -86,7 +86,7 @@
 			<section class="header_text sub">
 			<!-- <img class="pageBanner" src="<?php echo base_url("assets/img/GBP.jpg"); ?>" alt="Share-It-Up" > --><div class="col-md-12 ">
                                         <center>
-                                            <a class="" href="<?php echo base_url($x['foto_profil']); ?>">
+                                            <a class="" >
                                                 <img class="media-object dp img-circle" src="<?php echo base_url($x['foto_profil']); ?>" style="width: 180px;height:180px;">
                                             </a>
                                         </center>
@@ -124,12 +124,59 @@
 						<h4><?php echo $x['kode_pos']; ?></h4>
 						<p>Deskripsi</p>
 						<h4><?php echo $x['deskripsi']; ?></h4>
+						<!-- Tombol untuk menampilkan modal-->
+						<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Edit Profil</button>
 						</center>
 						<?php } ?>
 						</form>
-					</div>				
+					</div>
+					<!-- Modal -->
+					<div id="myModal" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+							<!-- konten modal-->
+							<div class="modal-content">
+							<!-- heading modal -->
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Edit Data Profil</h4>
+							</div>
+							<!-- body modal -->
+							<form method="POST" action="<?php echo site_url()."/Profile/edit_profil/"; ?>" enctype='multipart/form-data'>
+							<div class="modal-body">
+								<div class="form-group"> 
+		  							<label for="nama">Nama Lengkap</label>
+		  							<textarea style="width: 515px;" type="text" class="form-control" id="nama" name="nama" required=""><?php echo $x['nama_user']; ?></textarea>
+								</div>
+								<div class="form-group"> 
+		  							<label for="alamat">Alamat</label>
+		  							<input style="width: 515px;" type="text" class="form-control" id="alamat" name="alamat" required="" value="<?php echo $x['alamat']; ?>">
+								</div>
+								<div class="form-group"> 
+		  							<label for="kodepos">Kode Pos</label>
+		  							<input style="width: 515px;" type="text" class="form-control" id="kodepos" name="kodepos" required="" value="<?php echo $x['kode_pos']; ?>">
+								</div>
+								<div class="form-group"> 
+		  							<label for="deskripsi">Deskripsi</label>
+		  							<input style="width: 515px;" type="text" class="form-control" id="deskripsi" name="deskripsi" required="" value="<?php echo $x['deskripsi']; ?>">
+								</div>
+								<div class="form-group">
+		  							<label for="fotoprofil">Foto Profil</label>
+		  							<input style="width: 515px;" type="file" class="form-control" name="image" required="" value="<?php echo ($x['foto_profil']); ?>">
+
+								</div>
+
+							</div>
+							<!-- footer modal -->
+							<div class="modal-footer">
+								<button type="submit" class="btn btn-default">Kirim</button>
+							</div>
+							</div>
+						</div>
+					</div>
 				</div>
-			</section>			
+			</section>	
+
+
 			<section id="footer-bar">
 				<div class="row">
 					<div class="span3">

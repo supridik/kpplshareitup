@@ -8,6 +8,10 @@ class Model_kelolaProfil extends CI_Model {
 		  return $data->result_array();
 	}
 
+	function edit_profil($where,$table){		
+		return $this->db->get_where($table,$where);
+	}
+
 
 }
 	?>

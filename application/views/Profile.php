@@ -127,6 +127,7 @@
 						</center>
 						<?php } ?>
 						</form>
+						<button>test</button>
 					</div>				
 				</div>
 			</section>			

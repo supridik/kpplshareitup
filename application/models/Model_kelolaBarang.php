@@ -29,5 +29,11 @@ class Model_kelolaBarang extends CI_Model {
   		return $data->result_array();
   	}
 
+  	public function postBarang($data){
+  		$res = $this->db->insert('barang',$data);
+		return $res;
+
+  	}
+
 }
 ?>

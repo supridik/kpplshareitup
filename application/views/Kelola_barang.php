@@ -64,7 +64,7 @@
 									<li><a href="./products.html">Varius purus</a></li>									
 								</ul> -->	
 								</li>							
-							<li><a href="<?php echo base_url("post/user")?>">Barang</a>
+							<li><a href="<?php echo base_url("Kelola_barang")?>">Barang</a>
 								<!-- <ul>									
 									<li><a href="./products.html">Gifts and Tech</a></li>
 									<li><a href="./products.html">Ties and Hats</a></li>
@@ -80,7 +80,7 @@
 			<!--<img class="pageBanner" src="themes/images/pageBanner.png" alt="<?php echo $this->session->userdata('username'); ?>" >-->
 				<h4><span>LIST BARANG</span></h4>
 			</section>
-			<?=anchor('post/useradd', 
+			<?=anchor('post', 
                         'Post Barang', 
                         ['class'=>'btn btn-primary btn-sm'])?>
 			<table id="kpplshareitupTable" class="table table-striped table bordered table-hover">   

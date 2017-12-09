@@ -144,7 +144,7 @@
 		        
 		        <br>
 		        <input class="btn btn-primary" type="submit" name="btnSubmit" value="Submit"/> 
-          		<a class="btn btn-danger" href="<?php echo base_url()."index.php/post/user"; ?>" role="button">Cancel</a>
+          		<a class="btn btn-danger" href="<?php echo base_url()."Kelola_barang"; ?>" role="button">Cancel</a>
           		</form>
           		</div>
           		</div>
